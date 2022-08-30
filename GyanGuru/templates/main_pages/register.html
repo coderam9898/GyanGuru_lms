@@ -1,15 +1,19 @@
+{% load static%}
 <!doctype html>
 <html lang="en">
 
-<!-- Mirrored from transvelo.github.io/skola-html/5.1/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Mirrored from transvelo.github.io/GyanGuru-html/5.1/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:15 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{% static 'assets/img/brand.svg'%}">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -30,93 +34,94 @@
     <link href='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/theme.min.css'%}">
 
-    <title>Skola</title>
+    <title>GyanGuru</title>
 
 </head>
+
 <body class="bg-white">
 
     <!-- MODALS
     ================================================== -->
     <!-- Modal Sidebar account -->
     <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
 
-            <!-- Close -->
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <!-- Close -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
 
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+                        Schedule a demo with us
+                    </h2>
 
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                        We can help you solve company communication.
+                    </p>
 
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                    <!-- Form -->
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- First name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
+                                <!-- First name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                                    <label for="registrationFirstNameModal">First name</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Last name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
+                                <!-- Last name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                                    <label for="registrationLastNameModal">Last name</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- Email -->
-                  <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
+                                <!-- Email -->
+                                <div class="form-label-group">
+                                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                                    <label for="registrationEmailModal">Email</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Password -->
-                  <div class="form-label-group">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
+                                <!-- Password -->
+                                <div class="form-label-group">
+                                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                                    <label for="registrationPasswordModal">Password</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
 
-                  <!-- Submit -->
-                  <button class="btn btn-block btn-primary mt-3 lift">
+                                <!-- Submit -->
+                                <button class="btn btn-block btn-primary mt-3 lift">
                     Request a demo
                   </button>
 
-                </div>
-              </div>
-            </form>
+                            </div>
+                        </div>
+                    </form>
 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="modal modal-sidebar left fade-left fade" id="accountModal">
@@ -125,7 +130,7 @@
                 <!-- Signin -->
                 <div class="collapse show" id="collapseSignin" data-bs-parent="#accountModal">
                     <div class="modal-header">
-                        <h5 class="modal-title">Log In to Your Skola Account!</h5>
+                        <h5 class="modal-title">Log In to Your GyanGuru Account!</h5>
                         <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
                             <!-- Icon -->
                             <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -388,8 +393,8 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand me-0" href="index.html">
-                <img src="assets/img/brand.svg" class="navbar-brand-img" alt="...">
+            <a class="navbar-brand me-0" href="{% url 'homepage'%}">
+                <img src="{% static 'assets/img/brand.svg'%}" class="navbar-brand-img" alt="...">
             </a>
 
             <!-- Vertical Menu -->
@@ -784,7 +789,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="index.html" target="_blank">
-                                        <img src="assets/img/menu/home-v1.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v1.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v1</h6>
                                     </a>
@@ -792,7 +797,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v2.html" target="_blank">
-                                        <img src="assets/img/menu/home-v2.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v2.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v2</h6>
                                     </a>
@@ -800,7 +805,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v3.html" target="_blank">
-                                        <img src="assets/img/menu/home-v3.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v3.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v3</h6>
                                     </a>
@@ -808,7 +813,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v4.html" target="_blank">
-                                        <img src="assets/img/menu/home-v4.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v4.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v4</h6>
                                     </a>
@@ -816,7 +821,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v5.html" target="_blank">
-                                        <img src="assets/img/menu/home-v5.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v5.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v5</h6>
                                     </a>
@@ -824,7 +829,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v6.html" target="_blank">
-                                        <img src="assets/img/menu/home-v6.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v6.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v6</h6>
                                     </a>
@@ -832,7 +837,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v7.html" target="_blank">
-                                        <img src="assets/img/menu/home-v7.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v7.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v7</h6>
                                     </a>
@@ -840,7 +845,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v8.html" target="_blank">
-                                        <img src="assets/img/menu/home-v8.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v8.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v8</h6>
                                     </a>
@@ -848,7 +853,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v9.html" target="_blank">
-                                        <img src="assets/img/menu/home-v9.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v9.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v9</h6>
                                     </a>
@@ -856,7 +861,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v10.html" target="_blank">
-                                        <img src="assets/img/menu/home-v10.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v10.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v10</h6>
                                     </a>
@@ -864,7 +869,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v11.html" target="_blank">
-                                        <img src="assets/img/menu/home-v11.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v11.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v11</h6>
                                     </a>
@@ -872,7 +877,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v12.html" target="_blank">
-                                        <img src="assets/img/menu/home-v12.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v12.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v12</h6>
                                     </a>
@@ -880,7 +885,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v13.html" target="_blank">
-                                        <img src="assets/img/menu/home-v13.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v13.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v13</h6>
                                     </a>
@@ -888,7 +893,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v14.html" target="_blank">
-                                        <img src="assets/img/menu/home-v14.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v14.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v14</h6>
                                     </a>
@@ -896,7 +901,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v15.html" target="_blank">
-                                        <img src="assets/img/menu/home-v15.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v15.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v15</h6>
                                     </a>
@@ -990,7 +995,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+                        <!-- / .row -->
                     </li>
 
                     <li class="nav-item dropdown">
@@ -1040,10 +1046,10 @@
                                             <a class="dropdown-item" href="faq.html">
                                                 FAQ
                                             </a>
-                                            <a class="dropdown-item" href="login.html">
+                                            <a class="dropdown-item" href="{% url 'login'}">
                                                 Login
                                             </a>
-                                            <a class="dropdown-item" href="register.html">
+                                            <a class="dropdown-item" href="{% url 'course:signup'}">
                                                 Register
                                             </a>
                                             <a class="dropdown-item mb-5 mb-lg-0" href="become-instructor.html">
@@ -1063,7 +1069,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+                        <!-- / .row -->
                     </li>
 
                     <li class="nav-item dropdown">
@@ -1290,7 +1297,8 @@
             </ul>
 
             <!-- Toggler -->
-            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <!-- Icon -->
                 <svg width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
                     <rect width="25" height="1" fill="currentColor"/>
@@ -1370,7 +1378,7 @@
 
                 <!-- Text -->
                 <p class="mb-0 font-size-sm text-center">
-                    Already have an account? <a class="text-underline" href="login.html">Log In</a>
+                    Already have an account? <a class="text-underline" href="{% url 'login'%}">Log In</a>
                 </p>
             </div>
         </div>
@@ -1384,7 +1392,7 @@
                 <div class="col-12 col-md-4 col-lg-4">
 
                     <!-- Brand -->
-                    <img src="assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-4 h-60p">
+                    <img src="{% static 'assets/img/brand.svg'%}" alt="..." class="footer-brand img-fluid mb-4 h-60p">
 
                     <!-- Text -->
                     <p class="text-gray-800 mb-4 font-size-sm-alone">
@@ -1396,7 +1404,7 @@
                     </div>
 
                     <div class="mb-4">
-                        <a href="mailto:support@skola.com" class="text-gray-800 font-size-sm-alone">support@skola.com</a>
+                        <a href="mailto:support@GyanGuru.com" class="text-gray-800 font-size-sm-alone">support@GyanGuru.com</a>
                     </div>
 
                     <!-- Social -->
@@ -1718,42 +1726,45 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- / .row -->
-        </div> <!-- / .container -->
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
     </footer>
 
 
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="assets/libs/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/libs/quill/dist/quill.min.js"></script>
-    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js'%}"></script>
+    <script src="{% static 'assets/libs/aos/dist/aos.js'%}"></script>
+    <script src="{% static 'assets/libs/choices.js/public/assets/scripts/choices.min.js'%}"></script>
+    <script src="{% static 'assets/libs/countup.js/dist/countUp.min.js'%}"></script>
+    <script src="{% static 'assets/libs/dropzone/dist/min/dropzone.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity/dist/flickity.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity-fade/flickity-fade.js'%}"></script>
+    <script src="{% static 'assets/libs/highlightjs/highlight.pack.min.js'%}"></script>
+    <script src="{% static 'assets/libs/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/isotope-layout/dist/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-video.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-element.min.js'%}"></script>
+    <script src="{% static 'assets/libs/parallax-js/dist/parallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/quill/dist/quill.min.js'%}"></script>
+    <script src="{% static 'assets/libs/smooth-scroll/dist/smooth-scroll.min.js'%}"></script>
+    <script src="{% static 'assets/libs/typed.js/lib/typed.min.js'%}"></script>
 
     <!-- Map -->
     <script src='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="{% static 'assets/js/theme.min.js'%}"></script>
 
 
 </body>
 
-<!-- Mirrored from transvelo.github.io/skola-html/5.1/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:15 GMT -->
+<!-- Mirrored from transvelo.github.io/GyanGuru-html/5.1/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:15 GMT -->
+
 </html>

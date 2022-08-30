@@ -1,122 +1,127 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
-<!-- Mirrored from transvelo.github.io/skola-html/5.1/course-single-v5.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:12:14 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Mirrored from transvelo.github.io/GyanGuru-html/5.1/course-single-v5.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:12:14 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{% static 'assets/img/brand.svg'%}">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Lora:wght@400;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet">
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.css">
-    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/aos/dist/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/choices.js/public/assets/styles/choices.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity-fade/flickity-fade.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity/dist/flickity.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/highlightjs/styles/vs2015.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/jarallax/dist/jarallax.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/quill/dist/quill.core.css'%}" />
 
     <!-- Map -->
     <link href='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/theme.min.css'%}">
 
-    <title>Skola</title>
+    <title>GyanGuru</title>
 
 </head>
+
 <body class="bg-white">
 
     <!-- MODALS
     ================================================== -->
     <!-- Modal Sidebar account -->
     <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
 
-            <!-- Close -->
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <!-- Close -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
 
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+                        Schedule a demo with us
+                    </h2>
 
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                        We can help you solve company communication.
+                    </p>
 
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                    <!-- Form -->
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- First name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
+                                <!-- First name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                                    <label for="registrationFirstNameModal">First name</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Last name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
+                                <!-- Last name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                                    <label for="registrationLastNameModal">Last name</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- Email -->
-                  <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
+                                <!-- Email -->
+                                <div class="form-label-group">
+                                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                                    <label for="registrationEmailModal">Email</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Password -->
-                  <div class="form-label-group">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
+                                <!-- Password -->
+                                <div class="form-label-group">
+                                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                                    <label for="registrationPasswordModal">Password</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
 
-                  <!-- Submit -->
-                  <button class="btn btn-block btn-primary mt-3 lift">
+                                <!-- Submit -->
+                                <button class="btn btn-block btn-primary mt-3 lift">
                     Request a demo
                   </button>
 
-                </div>
-              </div>
-            </form>
+                            </div>
+                        </div>
+                    </form>
 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="modal modal-sidebar left fade-left fade" id="accountModal">
@@ -125,7 +130,7 @@
                 <!-- Signin -->
                 <div class="collapse show" id="collapseSignin" data-bs-parent="#accountModal">
                     <div class="modal-header">
-                        <h5 class="modal-title">Log In to Your Skola Account!</h5>
+                        <h5 class="modal-title">Log In to Your GyanGuru Account!</h5>
                         <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
                             <!-- Icon -->
                             <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -388,8 +393,8 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand me-0" href="index.html">
-                <img src="assets/img/brand.svg" class="navbar-brand-img" alt="...">
+            <a class="navbar-brand me-0" href="{% url 'homepage'%}">
+                <img src="{% static 'assets/img/brand.svg'%}" class="navbar-brand-img" alt="...">
             </a>
 
             <!-- Vertical Menu -->
@@ -783,8 +788,8 @@
                             <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 row-cols-xl-6">
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
-                                    <a class="dropdown-item" href="index.html" target="_blank">
-                                        <img src="assets/img/menu/home-v1.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                    <a class="dropdown-item" href="{% url 'homepage'%}" target="_blank">
+                                        <img src="{% static 'assets/img/menu/home-v1.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v1</h6>
                                     </a>
@@ -792,7 +797,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v2.html" target="_blank">
-                                        <img src="assets/img/menu/home-v2.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v2.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v2</h6>
                                     </a>
@@ -800,7 +805,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v3.html" target="_blank">
-                                        <img src="assets/img/menu/home-v3.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v3.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v3</h6>
                                     </a>
@@ -808,7 +813,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v4.html" target="_blank">
-                                        <img src="assets/img/menu/home-v4.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v4.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v4</h6>
                                     </a>
@@ -816,7 +821,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v5.html" target="_blank">
-                                        <img src="assets/img/menu/home-v5.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v5.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v5</h6>
                                     </a>
@@ -824,7 +829,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v6.html" target="_blank">
-                                        <img src="assets/img/menu/home-v6.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v6.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v6</h6>
                                     </a>
@@ -832,7 +837,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v7.html" target="_blank">
-                                        <img src="assets/img/menu/home-v7.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v7.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v7</h6>
                                     </a>
@@ -840,7 +845,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v8.html" target="_blank">
-                                        <img src="assets/img/menu/home-v8.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v8.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v8</h6>
                                     </a>
@@ -848,7 +853,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v9.html" target="_blank">
-                                        <img src="assets/img/menu/home-v9.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v9.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v9</h6>
                                     </a>
@@ -856,7 +861,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v10.html" target="_blank">
-                                        <img src="assets/img/menu/home-v10.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v10.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v10</h6>
                                     </a>
@@ -864,7 +869,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v11.html" target="_blank">
-                                        <img src="assets/img/menu/home-v11.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v11.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v11</h6>
                                     </a>
@@ -872,7 +877,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v12.html" target="_blank">
-                                        <img src="assets/img/menu/home-v12.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v12.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v12</h6>
                                     </a>
@@ -880,7 +885,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v13.html" target="_blank">
-                                        <img src="assets/img/menu/home-v13.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v13.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v13</h6>
                                     </a>
@@ -888,7 +893,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v14.html" target="_blank">
-                                        <img src="assets/img/menu/home-v14.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v14.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v14</h6>
                                     </a>
@@ -896,7 +901,7 @@
                                 <div class="col mb-5 col-wd-auto">
                                     <!-- List -->
                                     <a class="dropdown-item" href="home-v15.html" target="_blank">
-                                        <img src="assets/img/menu/home-v15.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
+                                        <img src="{% static 'assets/img/menu/home-v15.jpg'%}" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
                                         <!-- Heading -->
                                         <h6 class="text-center mb-0">Home v15</h6>
                                     </a>
@@ -990,7 +995,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+                        <!-- / .row -->
                     </li>
 
                     <li class="nav-item dropdown">
@@ -1063,7 +1069,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+                        <!-- / .row -->
                     </li>
 
                     <li class="nav-item dropdown">
@@ -1290,7 +1297,8 @@
             </ul>
 
             <!-- Toggler -->
-            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <!-- Icon -->
                 <svg width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
                     <rect width="25" height="1" fill="currentColor"/>
@@ -1323,7 +1331,7 @@
                     <div class="d-md-flex align-items-center mb-6">
                         <div class="border rounded-circle d-inline-block mb-4 mb-md-0 bg-white">
                             <div class="p-2">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="rounded-circle" width="68" height="68">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="rounded-circle" width="68" height="68">
                             </div>
                         </div>
 
@@ -1469,7 +1477,7 @@
                             </svg>
 
                         </div>
-                        <img class="rounded shadow-light-lg" src="assets/img/products/product-23.jpg" alt="...">
+                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-23.jpg'%}" alt="...">
                     </a>
 
                     <div class="d-flex align-items-center mb-2">
@@ -1507,8 +1515,10 @@
                 <div class="mb-8">
                     <h3 class="">Course Description</h3>
                     <p class="mb-6 line-height-md">Do you want to become a UI/UX designer but you don't know where to start? This course will allow you to develop your user interface design skills and you can add UI designer to your CV and start getting clients for your skills.</p>
-                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
-                    <p class="collapse mb-6 line-height-md" id="readcollapseExample">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente  I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs ea proident.</p>
+                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from
+                        entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
+                    <p class="collapse mb-6 line-height-md" id="readcollapseExample">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente I will help you learn and master Figma app comprehensively
+                        from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs ea proident.</p>
                     <a class="text-teal read-more h6 d-inline-block mb-8" data-bs-toggle="collapse" href="#readcollapseExample" role="button" aria-expanded="false" aria-controls="readcollapseExample">
                         <span class="d-inline-flex align-items-center more">
                             Read More
@@ -2319,7 +2329,7 @@
                     <div class="d-flex align-items-center mb-6">
                         <div class="d-inline-block rounded-circle border me-6 p-2">
                             <div class="avatar avatar-size-120">
-                                <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-2.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </div>
                         <div class="media-body">
@@ -2333,7 +2343,7 @@
                             <div class="d-flex align-items-center">
                                 <div class="me-3 d-flex text-secondary icon-uxs">
                                     <!-- Icon -->
-                                    <svg width="16px" height="16px" viewBox="0 -10 511.98685 511"  xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="16px" height="16px" viewBox="0 -10 511.98685 511" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor" d="m114.59375 491.140625c-5.609375 0-11.179688-1.75-15.933594-5.1875-8.855468-6.417969-12.992187-17.449219-10.582031-28.09375l32.9375-145.089844-111.703125-97.960937c-8.210938-7.167969-11.347656-18.519532-7.976562-28.90625 3.371093-10.367188 12.542968-17.707032 23.402343-18.710938l147.796875-13.417968 58.433594-136.746094c4.308594-10.046875 14.121094-16.535156 25.023438-16.535156 10.902343 0 20.714843 6.488281 25.023437 16.511718l58.433594 136.769532 147.773437 13.417968c10.882813.980469 20.054688 8.34375 23.425782 18.710938 3.371093 10.367187.253906 21.738281-7.957032 28.90625l-111.703125 97.941406 32.9375 145.085938c2.414063 10.667968-1.726562 21.699218-10.578125 28.097656-8.832031 6.398437-20.609375 6.890625-29.910156 1.300781l-127.445312-76.160156-127.445313 76.203125c-4.308594 2.558594-9.109375 3.863281-13.953125 3.863281zm141.398438-112.875c4.84375 0 9.640624 1.300781 13.953124 3.859375l120.277344 71.9375-31.085937-136.941406c-2.21875-9.746094 1.089843-19.921875 8.621093-26.515625l105.472657-92.5-139.542969-12.671875c-10.046875-.917969-18.6875-7.234375-22.613281-16.492188l-55.082031-129.046875-55.148438 129.066407c-3.882812 9.195312-12.523438 15.511718-22.546875 16.429687l-139.5625 12.671875 105.46875 92.5c7.554687 6.613281 10.859375 16.769531 8.621094 26.539062l-31.0625 136.9375 120.277343-71.914062c4.308594-2.558594 9.109376-3.859375 13.953126-3.859375zm-84.585938-221.847656s0 .023437-.023438.042969zm169.128906-.0625.023438.042969c0-.023438 0-.023438-.023438-.042969zm0 0"/>
                                     </svg>
 
@@ -2382,7 +2392,8 @@
                     </div>
 
                     <p class="mb-6 line-height-md">I am a UI/UX designer and an iOS developer with having almost six years of experience in application development and also ten years of graphic design and User Interface design.</p>
-                    <p class="mb-6 line-height-md">My passion is helping people to learn new skills in a short-term course and achieve their goals. I've been designing for more than ten years and developing iOS apps for four years. It's my honor if I could help you learn to program in a simple word. I currently am teaching iOS 13, Swift 5, ARKit 3, Sketch 5, Illustrator, Photoshop, Cinema 4D, HTML, CSS, JavaScript, etc.</p>
+                    <p class="mb-6 line-height-md">My passion is helping people to learn new skills in a short-term course and achieve their goals. I've been designing for more than ten years and developing iOS apps for four years. It's my honor if I could help you learn to program
+                        in a simple word. I currently am teaching iOS 13, Swift 5, ARKit 3, Sketch 5, Illustrator, Photoshop, Cinema 4D, HTML, CSS, JavaScript, etc.</p>
                 </div>
 
                 <div class="mb-8">
@@ -2471,7 +2482,7 @@
                     <ul class="list-unstyled pt-2">
                         <li class="media d-flex">
                             <div class="avatar avatar-xxl me-3 me-md-6 flex-shrink-0">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                             <div class="media-body flex-grow-1">
                                 <div class="d-md-flex align-items-center mb-5">
@@ -2483,12 +2494,13 @@
                                         <div class="rating" style="width:100%;"></div>
                                     </div>
                                 </div>
-                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24 frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
+                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24
+                                    frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
                             </div>
                         </li>
                         <li class="media d-flex">
                             <div class="avatar avatar-xxl me-3 me-md-6 flex-shrink-0">
-                                <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-2.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                             <div class="media-body flex-grow-1">
                                 <div class="d-md-flex align-items-center mb-5">
@@ -2500,7 +2512,8 @@
                                         <div class="rating" style="width:100%;"></div>
                                     </div>
                                 </div>
-                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24 frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
+                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24
+                                    frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
                             </div>
                         </li>
                     </ul>
@@ -2512,31 +2525,31 @@
                             <div class="clearfix">
                                 <fieldset class="slect-rating mb-3">
                                     <input type="radio" id="star5" name="rating" value="5" />
-                                    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                    <label class="full" for="star5" title="Awesome - 5 stars"></label>
 
                                     <input type="radio" id="star4half" name="rating" value="4 and a half" />
                                     <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
 
                                     <input type="radio" id="star4" name="rating" value="4" />
-                                    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
 
                                     <input type="radio" id="star3half" name="rating" value="3 and a half" />
                                     <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
 
                                     <input type="radio" id="star3" name="rating" value="3" />
-                                    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                    <label class="full" for="star3" title="Meh - 3 stars"></label>
 
                                     <input type="radio" id="star2half" name="rating" value="2 and a half" />
                                     <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
 
                                     <input type="radio" id="star2" name="rating" value="2" />
-                                    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
 
                                     <input type="radio" id="star1half" name="rating" value="1 and a half" />
                                     <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
 
                                     <input type="radio" id="star1" name="rating" value="1" />
-                                    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
 
                                     <input type="radio" id="starhalf" name="rating" value="half" />
                                     <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
@@ -2571,7 +2584,7 @@
                             </svg>
 
                         </div>
-                        <img class="rounded shadow-light-lg" src="assets/img/products/product-2.jpg" alt="...">
+                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-2.jpg'%}" alt="...">
                     </a>
 
                     <div class="pt-5 pb-4 px-5 px-lg-3 px-xl-5">
@@ -2712,7 +2725,7 @@
                         <ul class="list-unstyled mb-0">
                             <li class="media mb-6 d-flex">
                                 <a href="course-single-v5.html" class="w-100p d-block me-5">
-                                    <img src="assets/img/photos/photo-1.jpg" alt="..." class="avatar-img rounded-lg h-90p w-100p">
+                                    <img src="{% static 'assets/img/photos/photo-1.jpg'%}" alt="..." class="avatar-img rounded-lg h-90p w-100p">
                                 </a>
                                 <div class="media-body flex-grow-1">
                                     <a href="course-single-v5.html" class="d-block">
@@ -2725,7 +2738,7 @@
 
                             <li class="media mb-6 d-flex">
                                 <a href="course-single-v5.html" class="w-100p d-block me-5">
-                                    <img src="assets/img/photos/photo-2.jpg" alt="..." class="avatar-img rounded-lg h-90p w-100p">
+                                    <img src="{% static 'assets/img/photos/photo-2.jpg'%}" alt="..." class="avatar-img rounded-lg h-90p w-100p">
                                 </a>
                                 <div class="media-body flex-grow-1">
                                     <a href="course-single-v5.html" class="d-block">
@@ -2738,7 +2751,7 @@
 
                             <li class="media mb-6 d-flex">
                                 <a href="course-single-v5.html" class="w-100p d-block me-5">
-                                    <img src="assets/img/photos/photo-14.jpg" alt="..." class="avatar-img rounded-lg h-90p w-100p">
+                                    <img src="{% static 'assets/img/photos/photo-14.jpg'%}" alt="..." class="avatar-img rounded-lg h-90p w-100p">
                                 </a>
                                 <div class="media-body flex-grow-1">
                                     <a href="course-single-v5.html" class="d-block">
@@ -2751,7 +2764,7 @@
 
                             <li class="media mb-6 d-flex">
                                 <a href="course-single-v5.html" class="w-100p d-block me-5">
-                                    <img src="assets/img/photos/photo-16.jpg" alt="..." class="avatar-img rounded-lg h-90p w-100p">
+                                    <img src="{% static 'assets/img/photos/photo-16.jpg'%}" alt="..." class="avatar-img rounded-lg h-90p w-100p">
                                 </a>
                                 <div class="media-body flex-grow-1">
                                     <a href="course-single-v5.html" class="d-block">
@@ -2781,7 +2794,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <a href="course-single-v5.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-15.jpg" alt="...">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-15.jpg'%}" alt="...">
                         </a>
 
                         <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -2796,7 +2809,9 @@
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h5></a>
+                            <a href="course-single-v5.html" class="d-block stretched-link">
+                                <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h5>
+                            </a>
 
                             <div class="row mx-n2 align-items-end">
                                 <div class="col px-2">
@@ -2832,7 +2847,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <a href="course-single-v5.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-14.jpg" alt="...">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-14.jpg'%}" alt="...">
                         </a>
 
                         <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -2847,7 +2862,9 @@
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5></a>
+                            <a href="course-single-v5.html" class="d-block stretched-link">
+                                <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5>
+                            </a>
 
                             <div class="row mx-n2 align-items-end">
                                 <div class="col px-2">
@@ -2883,7 +2900,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <a href="course-single-v5.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-16.jpg" alt="...">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-16.jpg'%}" alt="...">
                         </a>
 
                         <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -2898,7 +2915,9 @@
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5></a>
+                            <a href="course-single-v5.html" class="d-block stretched-link">
+                                <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5>
+                            </a>
 
                             <div class="row mx-n2 align-items-end">
                                 <div class="col px-2">
@@ -2934,7 +2953,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <a href="course-single-v5.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-12.jpg" alt="...">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-12.jpg'%}" alt="...">
                         </a>
 
                         <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -2949,7 +2968,9 @@
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5></a>
+                            <a href="course-single-v5.html" class="d-block stretched-link">
+                                <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5>
+                            </a>
 
                             <div class="row mx-n2 align-items-end">
                                 <div class="col px-2">
@@ -2985,7 +3006,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <a href="course-single-v5.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-13.jpg" alt="...">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-13.jpg'%}" alt="...">
                         </a>
 
                         <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -3000,7 +3021,9 @@
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5></a>
+                            <a href="course-single-v5.html" class="d-block stretched-link">
+                                <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5>
+                            </a>
 
                             <div class="row mx-n2 align-items-end">
                                 <div class="col px-2">
@@ -3036,7 +3059,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <a href="course-single-v5.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-11.jpg" alt="...">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-11.jpg'%}" alt="...">
                         </a>
 
                         <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -3051,7 +3074,9 @@
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5></a>
+                            <a href="course-single-v5.html" class="d-block stretched-link">
+                                <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5>
+                            </a>
 
                             <div class="row mx-n2 align-items-end">
                                 <div class="col px-2">
@@ -3087,7 +3112,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <a href="course-single-v5.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-10.jpg" alt="...">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-10.jpg'%}" alt="...">
                         </a>
 
                         <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -3102,7 +3127,9 @@
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5></a>
+                            <a href="course-single-v5.html" class="d-block stretched-link">
+                                <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5>
+                            </a>
 
                             <div class="row mx-n2 align-items-end">
                                 <div class="col px-2">
@@ -3143,7 +3170,7 @@
                 <div class="col-12 col-md-4 col-lg-4">
 
                     <!-- Brand -->
-                    <img src="assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-4 h-60p">
+                    <img src="{% static 'assets/img/brand.svg'%}" alt="..." class="footer-brand img-fluid mb-4 h-60p">
 
                     <!-- Text -->
                     <p class="text-gray-800 mb-4 font-size-sm-alone">
@@ -3155,7 +3182,7 @@
                     </div>
 
                     <div class="mb-4">
-                        <a href="mailto:support@skola.com" class="text-gray-800 font-size-sm-alone">support@skola.com</a>
+                        <a href="mailto:support@GyanGuru.com" class="text-gray-800 font-size-sm-alone">support@GyanGuru.com</a>
                     </div>
 
                     <!-- Social -->
@@ -3477,42 +3504,45 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- / .row -->
-        </div> <!-- / .container -->
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
     </footer>
 
 
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="assets/libs/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/libs/quill/dist/quill.min.js"></script>
-    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js'%}"></script>
+    <script src="{% static 'assets/libs/aos/dist/aos.js'%}"></script>
+    <script src="{% static 'assets/libs/choices.js/public/assets/scripts/choices.min.js'%}"></script>
+    <script src="{% static 'assets/libs/countup.js/dist/countUp.min.js'%}"></script>
+    <script src="{% static 'assets/libs/dropzone/dist/min/dropzone.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity/dist/flickity.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity-fade/flickity-fade.js'%}"></script>
+    <script src="{% static 'assets/libs/highlightjs/highlight.pack.min.js'%}"></script>
+    <script src="{% static 'assets/libs/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/isotope-layout/dist/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-video.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-element.min.js'%}"></script>
+    <script src="{% static 'assets/libs/parallax-js/dist/parallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/quill/dist/quill.min.js'%}"></script>
+    <script src="{% static 'assets/libs/smooth-scroll/dist/smooth-scroll.min.js'%}"></script>
+    <script src="{% static 'assets/libs/typed.js/lib/typed.min.js'%}"></script>
 
     <!-- Map -->
     <script src='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="{% static 'assets/js/theme.min.js'%}"></script>
 
 
 </body>
 
-<!-- Mirrored from transvelo.github.io/skola-html/5.1/course-single-v5.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:12:14 GMT -->
+<!-- Mirrored from transvelo.github.io/GyanGuru-html/5.1/course-single-v5.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:12:14 GMT -->
+
 </html>

@@ -394,7 +394,7 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand me-0" href="/login.html/">
+            <a class="navbar-brand me-0" href="{% url 'login'%}">
                 <img src="{% static 'assets/img/brand.svg'%}" class="navbar-brand-img" alt="...">
             </a>
 
@@ -432,7 +432,8 @@
 
                             <div class="dropdown-menu ps-3 top-0 pe-0 py-0 shadow-none bg-transparent">
                                 <div class="dropdown-menu-md bg-primary rounded dropdown-menu-inner">
-                                    <a class="dropdown-item" href="course-single-v1.html">
+
+                                    <a class="dropdown-item" href="#">
                                         All Business
                                     </a>
                                     <a class="dropdown-item" href="course-single-v2.html">
@@ -1371,8 +1372,8 @@
                     </p>
 
                     <!-- Buttons -->
-                    <a href="course-list-v1.html" class="btn btn-wide btn-slide slide-primary shadow mb-4 mb-md-0 me-md-5" data-aos-duration="200" data-aos="fade-up">GET STARTED</a>
-                    <a href="course-list-v1.html" class="btn btn-primary btn-wide lift d-none d-lg-inline-block" data-aos-duration="200" data-aos="fade-up">VIEW COURSES</a>
+                    <a href="{% url 'login'%}" class="btn btn-wide btn-slide slide-primary shadow mb-4 mb-md-0 me-md-5" data-aos-duration="200" data-aos="fade-up">GET STARTED</a>
+                    <a href="{% url 'course:coursepage'%}" class="btn btn-primary btn-wide lift d-none d-lg-inline-block" data-aos-duration="200" data-aos="fade-up">VIEW COURSES</a>
 
                 </div>
             </div>
@@ -3001,7 +3002,7 @@
             <h1 class="text-capitalize">Get personal learning recommendations</h1>
             <div class="font-size-lg mb-md-6 mb-4">Enhance your skills with best Online courses</div>
             <div class="mx-auto">
-                <a href="course-list-v1.html" class="btn btn-primary btn-x-wide lift d-inline-block">GET STARTED NOW</a>
+                <a href="{% url 'course:coursepage'%}" class="btn btn-primary btn-x-wide lift d-inline-block">GET STARTED NOW</a>
             </div>
         </div>
     </section>
