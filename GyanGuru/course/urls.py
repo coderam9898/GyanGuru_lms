@@ -2,11 +2,14 @@
 # from user_mgmt.views import LoginUserView, RegisterView, UserLogoutView
 from os import path
 from django.urls import path
-from course.views import CoursePageView,CourseSingleView
+
+from course.views import CoursePageView,CourseSingleView,OrderCompleteView,EnrolledCourseView
 
 app_name = "course"
 
 urlpatterns = [
     path('coursepage/', CoursePageView.as_view(), name="coursepage"), 
     path('single/', CourseSingleView.as_view(), name="single"), 
+    path('order/', OrderCompleteView.as_view(), name="order"), 
+    path('enrolled/', EnrolledCourseView.as_view(), name="enrolled"), 
 ]

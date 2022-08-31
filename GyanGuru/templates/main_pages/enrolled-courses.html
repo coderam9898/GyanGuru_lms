@@ -1,122 +1,127 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
-<!-- Mirrored from transvelo.github.io/skola-html/5.1/course-list-v5.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:06 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Mirrored from transvelo.github.io/gyanguru-html/5.1/course-list-v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:04 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{% static 'asets/img/brand.svg'%}">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Lora:wght@400;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet">
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.css">
-    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/aos/dist/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/choices.js/public/assets/styles/choices.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity-fade/flickity-fade.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity/dist/flickity.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/highlightjs/styles/vs2015.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/jarallax/dist/jarallax.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/quill/dist/quill.core.css'%}" />
 
     <!-- Map -->
     <link href='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/theme.min.css'%}">
 
-    <title>Skola</title>
+    <title>gyanguru</title>
 
 </head>
+
 <body class="bg-white">
 
     <!-- MODALS
     ================================================== -->
     <!-- Modal Sidebar account -->
     <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
 
-            <!-- Close -->
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <!-- Close -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
 
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+                        Schedule a demo with us
+                    </h2>
 
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                        We can help you solve company communication.
+                    </p>
 
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                    <!-- Form -->
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- First name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
+                                <!-- First name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                                    <label for="registrationFirstNameModal">First name</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Last name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
+                                <!-- Last name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                                    <label for="registrationLastNameModal">Last name</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- Email -->
-                  <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
+                                <!-- Email -->
+                                <div class="form-label-group">
+                                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                                    <label for="registrationEmailModal">Email</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Password -->
-                  <div class="form-label-group">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
+                                <!-- Password -->
+                                <div class="form-label-group">
+                                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                                    <label for="registrationPasswordModal">Password</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
 
-                  <!-- Submit -->
-                  <button class="btn btn-block btn-primary mt-3 lift">
+                                <!-- Submit -->
+                                <button class="btn btn-block btn-primary mt-3 lift">
                     Request a demo
                   </button>
 
-                </div>
-              </div>
-            </form>
+                            </div>
+                        </div>
+                    </form>
 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="modal modal-sidebar left fade-left fade" id="accountModal">
@@ -125,7 +130,7 @@
                 <!-- Signin -->
                 <div class="collapse show" id="collapseSignin" data-bs-parent="#accountModal">
                     <div class="modal-header">
-                        <h5 class="modal-title">Log In to Your Skola Account!</h5>
+                        <h5 class="modal-title">Log In to Your gyanguru Account!</h5>
                         <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
                             <!-- Icon -->
                             <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -388,8 +393,8 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand me-0" href="index.html">
-                <img src="assets/img/brand.svg" class="navbar-brand-img" alt="...">
+            <a class="navbar-brand me-0" href="{% url 'homepage' %}">
+                <img src="{% static 'assets/img/brand.svg'%}" class="navbar-brand-img" alt="...">
             </a>
 
             <!-- Vertical Menu -->
@@ -429,10 +434,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -444,7 +449,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -469,10 +474,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -484,7 +489,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -515,10 +520,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -530,7 +535,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -558,10 +563,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -573,7 +578,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -597,10 +602,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -612,7 +617,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -636,10 +641,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -651,7 +656,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -678,10 +683,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -693,7 +698,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -718,10 +723,10 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         All Business
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Finance
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Entrepreneurship
                                     </a>
                                     <a class="dropdown-item" href="course-single-v4.html">
@@ -733,7 +738,7 @@
                                     <a class="dropdown-item" href="course-single-v1.html">
                                         Sales
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
+                                    <a class="dropdown-item" href="{% url 'course:single' %}">
                                         Operations
                                     </a>
                                 </div>
@@ -776,221 +781,45 @@
                 <!-- Navigation -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown dropdown-full-width">
-                        <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" href="{% url 'homepage' %}" aria-haspopup="true" aria-expanded="false">
                             Home
                         </a>
-                        <div class="dropdown-menu border-xl shadow-none dropdown-full pt-xl-7 px-xl-8" aria-labelledby="navbarLandings">
-                            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 row-cols-xl-6">
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="index.html" target="_blank">
-                                        <img src="assets/img/menu/home-v1.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v1</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v2.html" target="_blank">
-                                        <img src="assets/img/menu/home-v2.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v2</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v3.html" target="_blank">
-                                        <img src="assets/img/menu/home-v3.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v3</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v4.html" target="_blank">
-                                        <img src="assets/img/menu/home-v4.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v4</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v5.html" target="_blank">
-                                        <img src="assets/img/menu/home-v5.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v5</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v6.html" target="_blank">
-                                        <img src="assets/img/menu/home-v6.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v6</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v7.html" target="_blank">
-                                        <img src="assets/img/menu/home-v7.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v7</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v8.html" target="_blank">
-                                        <img src="assets/img/menu/home-v8.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v8</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v9.html" target="_blank">
-                                        <img src="assets/img/menu/home-v9.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v9</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v10.html" target="_blank">
-                                        <img src="assets/img/menu/home-v10.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v10</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v11.html" target="_blank">
-                                        <img src="assets/img/menu/home-v11.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v11</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v12.html" target="_blank">
-                                        <img src="assets/img/menu/home-v12.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v12</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v13.html" target="_blank">
-                                        <img src="assets/img/menu/home-v13.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v13</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v14.html" target="_blank">
-                                        <img src="assets/img/menu/home-v14.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v14</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v15.html" target="_blank">
-                                        <img src="assets/img/menu/home-v15.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v15</h6>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarCourses" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarCourses" data-bs-toggle="dropdown" href="{% url 'course:coursepage' %}" aria-haspopup="true" aria-expanded="false">
                             Courses
                         </a>
                         <div class="dropdown-menu border-xl shadow-none dropdown-menu-lg" aria-labelledby="navbarCourses">
                             <div class="row gx-0">
-                                <div class="col-md-4">
-                                    <!-- Heading -->
-                                    <h5 class="dropdown-header">
-                                        Courses List
-                                    </h5>
 
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="course-list-v1.html">
-                                        Courses List v1
-                                    </a>
-                                    <a class="dropdown-item" href="course-list-v2.html">
-                                        Courses List v2
-                                    </a>
-                                    <a class="dropdown-item" href="course-list-v3.html">
-                                        Courses List v3
-                                    </a>
-                                    <a class="dropdown-item" href="course-list-v4.html">
-                                        Courses List v4
-                                    </a>
-                                    <a class="dropdown-item" href="course-list-v5.html">
-                                        Courses List v5
-                                    </a>
-                                    <a class="dropdown-item mb-5" href="course-list-v6.html">
-                                        Courses List v6
-                                    </a>
-                                </div>
                                 <div class="col-md-4">
                                     <!-- Heading -->
                                     <h5 class="dropdown-header">
-                                        Courses Single
+                                        Courses
                                     </h5>
 
                                     <!-- List -->
                                     <a class="dropdown-item" href="course-single-v1.html">
-                                        Courses Single v1
+                                        View Courses 
                                     </a>
                                     <a class="dropdown-item" href="course-single-v2.html">
-                                        Courses Single v2
+                                        Enrolled Courses
                                     </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
-                                        Courses Single v3
-                                    </a>
-                                    <a class="dropdown-item" href="course-single-v4.html">
-                                        Courses Single v4
-                                    </a>
-                                    <a class="dropdown-item mb-5" href="course-single-v5.html">
-                                        Courses Single v5
-                                    </a>
+
                                 </div>
-                                <div class="col-md-4">
-                                    <!-- Heading -->
-                                    <h5 class="dropdown-header">
-                                        Lesson Single
-                                    </h5>
 
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="lesson-single-v1.html">
-                                        Lesson Single v1
-                                    </a>
-                                    <a class="dropdown-item mb-5" href="lesson-single-v2.html">
-                                        Lesson Single v2
-                                    </a>
-
-                                    <!-- Heading -->
-                                    <h5 class="dropdown-header">
-                                        Instructors
-                                    </h5>
-
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="instructors-list-v1.html">
-                                        Instructors List v1
-                                    </a>
-                                    <a class="dropdown-item" href="instructors-list-v2.html">
-                                        Instructors List v2
-                                    </a>
-                                    <a class="dropdown-item mb-5 mb-lg-0" href="instructors-single.html">
-                                        Instructors Single
-                                    </a>
-                                </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+
+                        <!-- / .row -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarCourses" data-bs-toggle="dropdown" href="{% url 'course:coursepage' %}" aria-haspopup="true" aria-expanded="false">
+                            instructors
+                        </a>
+
+                        <!-- / .row -->
                     </li>
 
                     <li class="nav-item dropdown">
@@ -1001,29 +830,13 @@
                             <div class="row gx-0">
                                 <div class="col-6">
                                     <div class="row gx-0">
-                                        <div class="col-12 col-lg-6">
-                                            <!-- List -->
-                                            <a class="dropdown-item" href="event-list.html">
-                                                Event List
-                                            </a>
-                                            <a class="dropdown-item" href="event-single.html">
-                                                Event Single
-                                            </a>
-                                            <a class="dropdown-item" href="gallery.html">
-                                                Gallery
-                                            </a>
-                                            <a class="dropdown-item mb-5 mb-lg-0" href="pricing.html">
-                                                Pricing
-                                            </a>
-                                        </div>
+
                                         <div class="col-12 col-lg-6">
                                             <!-- List -->
                                             <a class="dropdown-item" href="about-v1.html">
-                                                About v1
+                                                About Us
                                             </a>
-                                            <a class="dropdown-item" href="about-v2.html">
-                                                About v2
-                                            </a>
+
                                             <a class="dropdown-item" href="contact-us.html">
                                                 Contact us
                                             </a>
@@ -1051,59 +864,15 @@
                                             </a>
                                         </div>
 
-                                        <div class="col-12 col-lg-6">
-                                            <!-- List -->
-                                            <a class="dropdown-item" href="coming-soon.html">
-                                                Coming Soon
-                                            </a>
-                                            <a class="dropdown-item mb-5 mb-lg-0" href="404.html">
-                                                404
-                                            </a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+                        <!-- / .row -->
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarBlog" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                        </a>
-                        <ul class="dropdown-menu border-xl shadow-none" aria-labelledby="navbarBlog">
-                            <li class="dropdown-item dropright">
-                                <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                                    Blog Grid
-                                </a>
-                                <div class="dropdown-menu border-xl shadow-none">
-                                    <a class="dropdown-item" href="blog-grid-v1.html">
-                                        Grid v1
-                                    </a>
-                                    <a class="dropdown-item" href="blog-grid-v2.html">
-                                        Grid v2
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="dropdown-item dropright">
-                                <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                                    Blog List
-                                </a>
-                                <div class="dropdown-menu border-xl shadow-none">
-                                    <a class="dropdown-item" href="blog-list-v1.html">
-                                        List v1
-                                    </a>
-                                    <a class="dropdown-item" href="blog-list-v2.html">
-                                        List v2
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="dropdown-link" href="blog-single.html">
-                                    Blog Single
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarShop" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
@@ -1138,89 +907,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                            Documentation
-                        </a>
-                        <div class="dropdown-menu border-xl shadow-none dropdown-menu-md" aria-labelledby="navbarDocumentation">
-                            <div class="list-group list-group-flush">
-                                <a class="list-group-item" href="docs/index.html">
 
-                                    <!-- Icon -->
-                                    <div class="display-4 text-primary">
-                                        <i class="fas fa-clipboard"></i>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="ms-4">
-
-                                        <!-- Heading -->
-                                        <h5 class="text-primary mb-n1">
-                                            Documentation
-                                        </h5>
-
-                                        <!-- Text -->
-                                        <p class="font-size-sm text-gray-700 mb-0">
-                                            Customizing and building
-                                        </p>
-
-                                    </div>
-
-                                </a>
-                                <a class="list-group-item" href="docs/alerts.html">
-
-                                    <!-- Icon -->
-                                    <div class="display-4 text-primary">
-                                        <i class="fas fa-th-large"></i>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="ms-4">
-
-                                        <!-- Heading -->
-                                        <h5 class="text-primary mb-n1">
-                                            Components
-                                        </h5>
-
-                                        <!-- Text -->
-                                        <p class="font-size-sm text-gray-700 mb-0">
-                                            Full list of components
-                                        </p>
-
-                                    </div>
-
-                                </a>
-                                <a class="list-group-item" href="docs/changelog.html">
-
-                                    <!-- Icon -->
-                                    <div class="display-4 text-primary">
-                                        <i class="fas fa-file-alt"></i>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="ms-4">
-
-                                        <!-- Heading -->
-                                        <h5 class="text-primary mb-n1">
-                                            Changelog
-                                        </h5>
-
-                                        <!-- Text -->
-                                        <p class="font-size-sm text-gray-700 mb-0">
-                                            Keep track of changes
-                                        </p>
-
-                                    </div>
-
-                                    <!-- Badge -->
-                                    <span class="badge badge-pill badge-primary-soft ms-auto">
-                                        1.0
-                                    </span>
-
-                                </a>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
 
@@ -1290,7 +977,8 @@
             </ul>
 
             <!-- Toggler -->
-            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <!-- Icon -->
                 <svg width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
                     <rect width="25" height="1" fill="currentColor"/>
@@ -1305,18 +993,18 @@
 
     <!-- PAGE TITLE
     ================================================== -->
-    <header class="py-8 py-lg-12 mb-8 overlay overlay-primary overlay-80" style="background-image: url(assets/img/covers/cover-19.jpg);">
-        <div class="container text-center py-xl-5">
-            <h1 class="display-4 fw-semi-bold mb-0 text-white">Courses Grid 05</h1>
+    <header class="py-8 py-md-11" style="background-image: none;">
+        <div class="container text-center py-xl-2">
+            <h1 class="display-4 fw-semi-bold mb-0">Enrolled Courses</h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-scroll justify-content-center">
                     <li class="breadcrumb-item">
-                        <a class="text-white" href="#">
+                        <a class="text-gray-800" href="#">
                             Home
                         </a>
                     </li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">
-                        Courses Grid 05
+                    <li class="breadcrumb-item text-gray-800 active" aria-current="page">
+                        Enrolled Courses
                     </li>
                 </ol>
             </nav>
@@ -1330,13 +1018,13 @@
     ================================================== -->
     <div class="container mb-6 mb-xl-8 z-index-2">
         <div class="d-xl-flex align-items-center">
-            <p class="mb-xl-0">We found <span class="text-dark">834 courses</span> available for you</p>
+            <p class="mb-xl-0">We found <span class="text-dark">2 courses</span> Enrolled for you</p>
             <div class="ms-xl-auto d-xl-flex flex-wrap">
                 <div class="mb-4 mb-xl-0 ms-xl-6">
                     <!-- Search -->
                     <form class="">
                         <div class="input-group input-group-filter">
-                            <input class="form-control form-control-sm placeholder-dark border-end-0" type="search" placeholder="Search our courses" aria-label="Search">
+                            <input class="form-control form-control-sm placeholder-dark border-end-0 shadow-none" type="search" placeholder="Search our courses" aria-label="Search">
                             <div class="input-group-append">
                                 <button class="btn btn-sm btn-outline-white border-start-0 text-dark bg-transparent" type="submit">
                                     <!-- Icon -->
@@ -1374,18 +1062,17 @@
         </div>
     </div>
 
-
-    <!-- COURSE
+    <!-- COURSE LIST V1
     ================================================== -->
     <div class="container pb-4 pb-xl-7">
         <div class="row row-cols-md-2 row-cols-xl-3 mb-6 mb-xl-3">
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <div class="badge-float sk-fade-top top-0 right-0 mt-4 me-4">
-                            <a href="course-single-v5.html" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 me-1 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
+                            <a href="{% url 'course:single' %}" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 me-1 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
                                 <!-- Icon -->
                                 <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.8856 8.64995C17.7248 8.42998 13.8934 3.26379 8.99991 3.26379C4.10647 3.26379 0.274852 8.42998 0.114223 8.64974C-0.0380743 8.85843 -0.0380743 9.14147 0.114223 9.35016C0.274852 9.57013 4.10647 14.7363 8.99991 14.7363C13.8934 14.7363 17.7248 9.5701 17.8856 9.35034C18.0381 9.14169 18.0381 8.85843 17.8856 8.64995ZM8.99991 13.5495C5.39537 13.5495 2.27345 10.1206 1.3493 8.99965C2.27226 7.87771 5.38764 4.4506 8.99991 4.4506C12.6043 4.4506 15.726 7.8789 16.6505 9.00046C15.7276 10.1224 12.6122 13.5495 8.99991 13.5495Z" fill="currentColor"/>
@@ -1393,7 +1080,7 @@
                                 </svg>
 
                             </a>
-                            <a href="course-single-v5.html" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
+                            <a href="{% url 'course:single' %}" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
                                 <!-- Icon -->
                                 <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.2437 1.20728C10.0203 1.20728 8.87397 1.66486 7.99998 2.48357C7.12598 1.66486 5.97968 1.20728 4.7563 1.20728C2.13368 1.20728 0 3.341 0 5.96366C0 7.2555 0.425164 8.52729 1.26366 9.74361C1.91197 10.6841 2.80887 11.5931 3.92937 12.4454C5.809 13.8753 7.66475 14.6543 7.74285 14.6867L7.99806 14.7928L8.25384 14.6881C8.33199 14.6562 10.1889 13.8882 12.0696 12.4635C13.1907 11.6142 14.0881 10.7054 14.7367 9.7625C15.575 8.54385 16 7.26577 16 5.96371C16 3.341 13.8663 1.20728 11.2437 1.20728ZM8.00141 13.3353C6.74962 12.7555 1.33966 10.0142 1.33966 5.96366C1.33966 4.07969 2.87237 2.54698 4.75634 2.54698C5.827 2.54698 6.81558 3.03502 7.46862 3.88598L8.00002 4.57845L8.53142 3.88598C9.18446 3.03502 10.173 2.54698 11.2437 2.54698C13.1276 2.54698 14.6604 4.07969 14.6604 5.96366C14.6603 10.0433 9.25265 12.7613 8.00141 13.3353Z" fill="currentColor"/>
@@ -1402,8 +1089,8 @@
                             </a>
                         </div>
 
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-1.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-1.jpg'%}" alt="...">
                         </a>
 
                         <span class="badge sk-fade-bottom badge-lg badge-orange badge-pill badge-float bottom-0 left-0 mb-4 ms-4">
@@ -1415,16 +1102,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="d-block">
                             <div class="avatar sk-fade-right avatar-xl badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -1478,11 +1167,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-2.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-2.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -1490,16 +1179,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-2.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Development</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Development</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Build Real Projects!</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Build Real Projects!</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -1553,11 +1244,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-3.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-3.jpg'%}" alt="...">
                         </a>
 
                         <span class="badge sk-fade-bottom badge-lg badge-purple badge-pill badge-float bottom-0 left-0 mb-4 ms-4">
@@ -1569,16 +1260,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-3.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -1632,11 +1325,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-4.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-4.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -1644,16 +1337,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-3.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete Financial Analyst Course 2020</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete Financial Analyst Course 2020</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -1707,11 +1402,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-5.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-5.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -1719,17 +1414,19 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -1783,11 +1480,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-6.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-6.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -1795,16 +1492,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-5.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -1858,11 +1557,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <div class="badge-float sk-fade-top top-0 right-0 mt-4 me-4">
-                            <a href="course-single-v5.html" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 me-1 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
+                            <a href="{% url 'course:single' %}" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 me-1 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
                                 <!-- Icon -->
                                 <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.8856 8.64995C17.7248 8.42998 13.8934 3.26379 8.99991 3.26379C4.10647 3.26379 0.274852 8.42998 0.114223 8.64974C-0.0380743 8.85843 -0.0380743 9.14147 0.114223 9.35016C0.274852 9.57013 4.10647 14.7363 8.99991 14.7363C13.8934 14.7363 17.7248 9.5701 17.8856 9.35034C18.0381 9.14169 18.0381 8.85843 17.8856 8.64995ZM8.99991 13.5495C5.39537 13.5495 2.27345 10.1206 1.3493 8.99965C2.27226 7.87771 5.38764 4.4506 8.99991 4.4506C12.6043 4.4506 15.726 7.8789 16.6505 9.00046C15.7276 10.1224 12.6122 13.5495 8.99991 13.5495Z" fill="currentColor"/>
@@ -1870,7 +1569,7 @@
                                 </svg>
 
                             </a>
-                            <a href="course-single-v5.html" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
+                            <a href="{% url 'course:single' %}" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
                                 <!-- Icon -->
                                 <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.2437 1.20728C10.0203 1.20728 8.87397 1.66486 7.99998 2.48357C7.12598 1.66486 5.97968 1.20728 4.7563 1.20728C2.13368 1.20728 0 3.341 0 5.96366C0 7.2555 0.425164 8.52729 1.26366 9.74361C1.91197 10.6841 2.80887 11.5931 3.92937 12.4454C5.809 13.8753 7.66475 14.6543 7.74285 14.6867L7.99806 14.7928L8.25384 14.6881C8.33199 14.6562 10.1889 13.8882 12.0696 12.4635C13.1907 11.6142 14.0881 10.7054 14.7367 9.7625C15.575 8.54385 16 7.26577 16 5.96371C16 3.341 13.8663 1.20728 11.2437 1.20728ZM8.00141 13.3353C6.74962 12.7555 1.33966 10.0142 1.33966 5.96366C1.33966 4.07969 2.87237 2.54698 4.75634 2.54698C5.827 2.54698 6.81558 3.03502 7.46862 3.88598L8.00002 4.57845L8.53142 3.88598C9.18446 3.03502 10.173 2.54698 11.2437 2.54698C13.1276 2.54698 14.6604 4.07969 14.6604 5.96366C14.6603 10.0433 9.25265 12.7613 8.00141 13.3353Z" fill="currentColor"/>
@@ -1879,8 +1578,8 @@
                             </a>
                         </div>
 
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-20.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-20.jpg'%}" alt="...">
                         </a>
 
                         <span class="badge sk-fade-bottom badge-lg badge-orange badge-pill badge-float bottom-0 left-0 mb-4 ms-4">
@@ -1892,16 +1591,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="d-block">
                             <div class="avatar sk-fade-right avatar-xl badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Unity Medical Visualization: 03 Deployment and Usability</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Unity Medical Visualization: 03 Deployment and Usability</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -1955,11 +1656,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-21.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-21.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -1967,16 +1668,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-2.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Development</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Development</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Cubase Pro 10 Essential Training: Advanced</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Cubase Pro 10 Essential Training: Advanced</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2030,11 +1733,11 @@
             </div>
             <div class="col-md pb-4 pb-md-7">
                 <!-- Card -->
-                <div class="card card-border-hover border shadow-dark-hover p-2 lift sk-fade">
+                <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v5.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-22.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-22.jpg'%}" alt="...">
                         </a>
 
                         <span class="badge sk-fade-bottom badge-lg badge-purple badge-pill badge-float bottom-0 left-0 mb-4 ms-4">
@@ -2046,16 +1749,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-3.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v5.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v5.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">QuickBooks Online Essential Training </h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">QuickBooks Online Essential Training </h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2116,7 +1821,7 @@
                     <!-- Image -->
                     <div class="card-zoom position-relative">
                         <div class="badge-float sk-fade-top top-0 right-0 mt-4 me-4">
-                            <a href="course-single-v2.html" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 me-1 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
+                            <a href="{% url 'course:single' %}" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 me-1 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
                                 <!-- Icon -->
                                 <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M17.8856 8.64995C17.7248 8.42998 13.8934 3.26379 8.99991 3.26379C4.10647 3.26379 0.274852 8.42998 0.114223 8.64974C-0.0380743 8.85843 -0.0380743 9.14147 0.114223 9.35016C0.274852 9.57013 4.10647 14.7363 8.99991 14.7363C13.8934 14.7363 17.7248 9.5701 17.8856 9.35034C18.0381 9.14169 18.0381 8.85843 17.8856 8.64995ZM8.99991 13.5495C5.39537 13.5495 2.27345 10.1206 1.3493 8.99965C2.27226 7.87771 5.38764 4.4506 8.99991 4.4506C12.6043 4.4506 15.726 7.8789 16.6505 9.00046C15.7276 10.1224 12.6122 13.5495 8.99991 13.5495Z" fill="currentColor"/>
@@ -2124,7 +1829,7 @@
                                 </svg>
 
                             </a>
-                            <a href="course-single-v2.html" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
+                            <a href="{% url 'course:single' %}" class="btn btn-xs btn-dark text-white rounded-circle lift opacity-dot-7 p-2 d-inline-flex justify-content-center align-items-center w-36 h-36">
                                 <!-- Icon -->
                                 <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.2437 1.20728C10.0203 1.20728 8.87397 1.66486 7.99998 2.48357C7.12598 1.66486 5.97968 1.20728 4.7563 1.20728C2.13368 1.20728 0 3.341 0 5.96366C0 7.2555 0.425164 8.52729 1.26366 9.74361C1.91197 10.6841 2.80887 11.5931 3.92937 12.4454C5.809 13.8753 7.66475 14.6543 7.74285 14.6867L7.99806 14.7928L8.25384 14.6881C8.33199 14.6562 10.1889 13.8882 12.0696 12.4635C13.1907 11.6142 14.0881 10.7054 14.7367 9.7625C15.575 8.54385 16 7.26577 16 5.96371C16 3.341 13.8663 1.20728 11.2437 1.20728ZM8.00141 13.3353C6.74962 12.7555 1.33966 10.0142 1.33966 5.96366C1.33966 4.07969 2.87237 2.54698 4.75634 2.54698C5.827 2.54698 6.81558 3.03502 7.46862 3.88598L8.00002 4.57845L8.53142 3.88598C9.18446 3.03502 10.173 2.54698 11.2437 2.54698C13.1276 2.54698 14.6604 4.07969 14.6604 5.96366C14.6603 10.0433 9.25265 12.7613 8.00141 13.3353Z" fill="currentColor"/>
@@ -2133,8 +1838,8 @@
                             </a>
                         </div>
 
-                        <a href="course-single-v2.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-1.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-1.jpg'%}" alt="...">
                         </a>
 
                         <span class="badge sk-fade-bottom badge-lg badge-orange badge-pill badge-float bottom-0 left-0 mb-4 ms-4">
@@ -2146,16 +1851,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="d-block">
                             <div class="avatar sk-fade-right avatar-xl badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v2.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v2.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2212,8 +1919,8 @@
                 <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v2.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-2.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-2.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -2221,16 +1928,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-2.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v2.html"><span class="mb-1 d-inline-block text-gray-800">Development</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Development</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v2.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Build Real Projects!</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Build Real Projects!</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2287,8 +1996,8 @@
                 <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v2.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-3.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-3.jpg'%}" alt="...">
                         </a>
 
                         <span class="badge sk-fade-bottom badge-lg badge-purple badge-pill badge-float bottom-0 left-0 mb-4 ms-4">
@@ -2300,16 +2009,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-3.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v2.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v2.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2366,8 +2077,8 @@
                 <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v2.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-4.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-4.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -2375,16 +2086,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-3.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v2.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v2.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete Financial Analyst Course 2020</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">The Complete Financial Analyst Course 2020</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2441,8 +2154,8 @@
                 <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v2.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-5.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-5.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -2450,17 +2163,19 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v2.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v2.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2517,8 +2232,8 @@
                 <div class="card border shadow p-2 lift sk-fade">
                     <!-- Image -->
                     <div class="card-zoom position-relative">
-                        <a href="course-single-v2.html" class="card-img sk-thumbnail d-block">
-                            <img class="rounded shadow-light-lg" src="assets/img/products/product-6.jpg" alt="...">
+                        <a href="{% url 'course:single' %}" class="card-img sk-thumbnail d-block">
+                            <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-6.jpg'%}" alt="...">
                         </a>
                     </div>
 
@@ -2526,16 +2241,18 @@
                     <div class="card-footer px-2 pb-2 mb-1 pt-4 position-relative">
                         <a href="instructors-single.html" class="">
                             <div class="avatar avatar-xl sk-fade-right badge-float position-absolute top-0 right-0 mt-n6 me-5 rounded-circle shadow border border-white border-w-lg">
-                                <img src="assets/img/avatars/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-5.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                         </a>
 
                         <!-- Preheading -->
-                        <a href="course-single-v2.html"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
+                        <a href="{% url 'course:single' %}"><span class="mb-1 d-inline-block text-gray-800">Photography</span></a>
 
                         <!-- Heading -->
                         <div class="position-relative">
-                            <a href="course-single-v2.html" class="d-block stretched-link"><h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4></a>
+                            <a href="{% url 'course:single' %}" class="d-block stretched-link">
+                                <h4 class="line-clamp-2 h-md-48 h-lg-58 me-md-6 me-lg-10 me-xl-4 mb-2">Learn Figma: User Interface Design Essentials - UI/UX Design</h4>
+                            </a>
 
                             <div class="d-lg-flex align-items-end flex-wrap mb-n1">
                                 <div class="star-rating mb-2 mb-lg-0 me-lg-3">
@@ -2589,8 +2306,8 @@
             </div>
         </div>
 
-        <div class="text-center mb-7">
-            <a class="btn btn-outline-white mw-300p d-flex mx-auto read-more" data-toggle="collapse" href="#loadcollapseExample" role="button" aria-expanded="false" aria-controls="loadcollapseExample">
+        <div class="text-center">
+            <a class="btn btn-outline-white mw-300p d-flex mx-auto read-more" data-bs-toggle="collapse" href="#loadcollapseExample" role="button" aria-expanded="false" aria-controls="loadcollapseExample">
                 <span class="d-inline-flex mx-auto align-items-center more">
                     <!-- Icon -->
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -2622,8 +2339,9 @@
                 <div class="col-12 col-md-4 col-lg-4">
 
                     <!-- Brand -->
-                    <img src="assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-4 h-60p">
-
+                    <a href="{% url 'homepage' %}">
+                        <img src="{% static 'assets/img/brand.svg'%}" alt="..." class="footer-brand img-fluid mb-4 h-60p">
+                    </a>
                     <!-- Text -->
                     <p class="text-gray-800 mb-4 font-size-sm-alone">
                         329 Queensberry Street, North Melbourne VIC 3051, Australia.
@@ -2634,7 +2352,7 @@
                     </div>
 
                     <div class="mb-4">
-                        <a href="mailto:support@skola.com" class="text-gray-800 font-size-sm-alone">support@skola.com</a>
+                        <a href="mailto:support@gyanguru.com" class="text-gray-800 font-size-sm-alone">support@gyanguru.com</a>
                     </div>
 
                     <!-- Social -->
@@ -2932,7 +2650,7 @@
                         <div class="ms-xl-auto d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-center">
                             <ul class="navbar-nav flex-row flex-wrap font-size-sm-alone mb-3 mb-md-0 mx-n4 me-md-5 justify-content-center justify-content-lg-start order-1 order-md-0">
                                 <li class="nav-item py-2 py-md-0 px-0 border-top-0">
-                                    <a href="index.html" class="nav-link px-4 fw-normal text-gray-800">Home</a>
+                                    <a href="{% url 'homepage' %}" class="nav-link px-4 fw-normal text-gray-800">Home</a>
                                 </li>
                                 <li class="nav-item py-2 py-md-0 px-0 border-top-0">
                                     <a href="terms-of-service.html" class="nav-link px-4 fw-normal text-gray-800">Site Map</a>
@@ -2956,42 +2674,45 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- / .row -->
-        </div> <!-- / .container -->
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
     </footer>
 
 
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="assets/libs/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/libs/quill/dist/quill.min.js"></script>
-    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js'%}"></script>
+    <script src="{% static 'assets/libs/aos/dist/aos.js'%}"></script>
+    <script src="{% static 'assets/libs/choices.js/public/assets/scripts/choices.min.js'%}"></script>
+    <script src="{% static 'assets/libs/countup.js/dist/countUp.min.js'%}"></script>
+    <script src="{% static 'assets/libs/dropzone/dist/min/dropzone.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity/dist/flickity.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity-fade/flickity-fade.js'%}"></script>
+    <script src="{% static 'assets/libs/highlightjs/highlight.pack.min.js'%}"></script>
+    <script src="{% static 'assets/libs/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/isotope-layout/dist/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-video.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-element.min.js'%}"></script>
+    <script src="{% static 'assets/libs/parallax-js/dist/parallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/quill/dist/quill.min.js'%}"></script>
+    <script src="{% static 'assets/libs/smooth-scroll/dist/smooth-scroll.min.js'%}"></script>
+    <script src="{% static 'assets/libs/typed.js/lib/typed.min.js'%}"></script>
 
     <!-- Map -->
     <script src='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="{% static 'assets/js/theme.min.js'%}"></script>
 
 
 </body>
 
-<!-- Mirrored from transvelo.github.io/skola-html/5.1/course-list-v5.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:06 GMT -->
+<!-- Mirrored from transvelo.github.io/gyanguru-html/5.1/course-list-v1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:05 GMT -->
+
 </html>
