@@ -790,6 +790,28 @@
                         <a class="nav-link dropdown-toggle" id="navbarCourses" data-bs-toggle="dropdown" href="{% url 'course:coursepage' %}" aria-haspopup="true" aria-expanded="false">
                             Courses
                         </a>
+                        <div class="dropdown-menu border-xl shadow-none dropdown-menu-lg" aria-labelledby="navbarCourses">
+                            <div class="row gx-0">
+
+                                <div class="col-md-4">
+                                    <!-- Heading -->
+                                    <h5 class="dropdown-header">
+                                        Courses
+                                    </h5>
+
+                                    <!-- List -->
+                                    <a class="dropdown-item" href="{% url 'course:coursepage' %}">
+                                        View Courses 
+                                    </a>
+                                    <a class="dropdown-item" href="{% url 'course:enrolled' %}">
+                                        Enrolled Courses
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
 
                         <!-- / .row -->
                     </li>
@@ -832,10 +854,10 @@
                                             <a class="dropdown-item" href="faq.html">
                                                 FAQ
                                             </a>
-                                            <a class="dropdown-item" href="login.html">
+                                            <a class="dropdown-item" href="{% url 'login'%}">
                                                 Login
                                             </a>
-                                            <a class="dropdown-item" href="register.html">
+                                            <a class="dropdown-item" href="{% url 'user_mgmt:signup'%}">
                                                 Register
                                             </a>
                                             <a class="dropdown-item mb-5 mb-lg-0" href="become-instructor.html">
@@ -968,6 +990,7 @@
             </button>
         </div>
     </header>
+
 
 
     <!-- PAGE HEADER
@@ -2714,7 +2737,9 @@
                 <div class="col-12 col-md-4 col-lg-4">
 
                     <!-- Brand -->
-                    <img src="{% static 'assets/img/brand.svg'%}" alt="..." class="footer-brand img-fluid mb-4 h-60p">
+                    <a href="{% url 'homepage' %}">
+                        <img src="{% static 'assets/img/brand.svg'%}" alt="..." class="footer-brand img-fluid mb-4 h-60p">
+                    </a>
 
                     <!-- Text -->
                     <p class="text-gray-800 mb-4 font-size-sm-alone">

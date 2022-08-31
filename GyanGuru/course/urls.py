@@ -3,7 +3,7 @@
 from os import path
 from django.urls import path
 
-from course.views import CoursePageView,CourseSingleView,OrderCompleteView,EnrolledCourseView
+from course.views import CoursePageView,CourseSingleView,OrderCompleteView,EnrolledCourseView,LessonView,InstructorSingleView
 
 app_name = "course"
 
@@ -12,4 +12,6 @@ urlpatterns = [
     path('single/', CourseSingleView.as_view(), name="single"), 
     path('order/', OrderCompleteView.as_view(), name="order"), 
     path('enrolled/', EnrolledCourseView.as_view(), name="enrolled"), 
+    path('lesson/', LessonView.as_view(), name="lesson"), 
+    path('instructor/', InstructorSingleView.as_view(), name="instructor"), 
 ]

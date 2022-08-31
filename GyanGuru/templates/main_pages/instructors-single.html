@@ -1,8 +1,12 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
 <!-- Mirrored from transvelo.github.io/skola-html/5.1/instructors-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:10 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,107 +20,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Lora:wght@400;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet">
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.css">
-    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/aos/dist/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/choices.js/public/assets/styles/choices.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity-fade/flickity-fade.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity/dist/flickity.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/highlightjs/styles/vs2015.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/jarallax/dist/jarallax.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/quill/dist/quill.core.css'%}" />
 
     <!-- Map -->
     <link href='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/theme.min.css'%}">
 
     <title>Skola</title>
 
 </head>
+
 <body class="bg-white">
 
     <!-- MODALS
     ================================================== -->
     <!-- Modal Sidebar account -->
     <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
 
-            <!-- Close -->
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <!-- Close -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
 
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+                        Schedule a demo with us
+                    </h2>
 
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                        We can help you solve company communication.
+                    </p>
 
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                    <!-- Form -->
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- First name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
+                                <!-- First name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                                    <label for="registrationFirstNameModal">First name</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Last name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
+                                <!-- Last name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                                    <label for="registrationLastNameModal">Last name</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- Email -->
-                  <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
+                                <!-- Email -->
+                                <div class="form-label-group">
+                                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                                    <label for="registrationEmailModal">Email</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Password -->
-                  <div class="form-label-group">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
+                                <!-- Password -->
+                                <div class="form-label-group">
+                                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                                    <label for="registrationPasswordModal">Password</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
 
-                  <!-- Submit -->
-                  <button class="btn btn-block btn-primary mt-3 lift">
+                                <!-- Submit -->
+                                <button class="btn btn-block btn-primary mt-3 lift">
                     Request a demo
                   </button>
 
-                </div>
-              </div>
-            </form>
+                            </div>
+                        </div>
+                    </form>
 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="modal modal-sidebar left fade-left fade" id="accountModal">
@@ -388,8 +393,8 @@
         <div class="container-fluid">
 
             <!-- Brand -->
-            <a class="navbar-brand me-0" href="index.html">
-                <img src="assets/img/brand.svg" class="navbar-brand-img" alt="...">
+            <a class="navbar-brand me-0" href="{% url 'homepage' %}">
+                <img src="{% static 'assets/img/brand.svg'%}" class="navbar-brand-img" alt="...">
             </a>
 
             <!-- Vertical Menu -->
@@ -776,221 +781,46 @@
                 <!-- Navigation -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown dropdown-full-width">
-                        <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" href="{% url 'homepage' %}" aria-haspopup="true" aria-expanded="false">
                             Home
                         </a>
-                        <div class="dropdown-menu border-xl shadow-none dropdown-full pt-xl-7 px-xl-8" aria-labelledby="navbarLandings">
-                            <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 row-cols-xl-6">
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="index.html" target="_blank">
-                                        <img src="assets/img/menu/home-v1.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v1</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v2.html" target="_blank">
-                                        <img src="assets/img/menu/home-v2.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v2</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v3.html" target="_blank">
-                                        <img src="assets/img/menu/home-v3.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v3</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v4.html" target="_blank">
-                                        <img src="assets/img/menu/home-v4.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v4</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v5.html" target="_blank">
-                                        <img src="assets/img/menu/home-v5.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v5</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v6.html" target="_blank">
-                                        <img src="assets/img/menu/home-v6.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v6</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v7.html" target="_blank">
-                                        <img src="assets/img/menu/home-v7.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v7</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v8.html" target="_blank">
-                                        <img src="assets/img/menu/home-v8.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v8</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v9.html" target="_blank">
-                                        <img src="assets/img/menu/home-v9.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v9</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v10.html" target="_blank">
-                                        <img src="assets/img/menu/home-v10.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v10</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v11.html" target="_blank">
-                                        <img src="assets/img/menu/home-v11.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v11</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v12.html" target="_blank">
-                                        <img src="assets/img/menu/home-v12.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v12</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v13.html" target="_blank">
-                                        <img src="assets/img/menu/home-v13.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v13</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v14.html" target="_blank">
-                                        <img src="assets/img/menu/home-v14.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v14</h6>
-                                    </a>
-                                </div>
-                                <div class="col mb-5 col-wd-auto">
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="home-v15.html" target="_blank">
-                                        <img src="assets/img/menu/home-v15.jpg" class="img-fluid shadow rounded border d-flex mx-auto mb-5 h-md-152" alt="...">
-                                        <!-- Heading -->
-                                        <h6 class="text-center mb-0">Home v15</h6>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarCourses" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarCourses" data-bs-toggle="dropdown" href="{% url 'course:coursepage' %}" aria-haspopup="true" aria-expanded="false">
                             Courses
                         </a>
                         <div class="dropdown-menu border-xl shadow-none dropdown-menu-lg" aria-labelledby="navbarCourses">
                             <div class="row gx-0">
+
                                 <div class="col-md-4">
                                     <!-- Heading -->
                                     <h5 class="dropdown-header">
-                                        Courses List
+                                        Courses
                                     </h5>
 
                                     <!-- List -->
-                                    <a class="dropdown-item" href="course-list-v1.html">
-                                        Courses List v1
+                                    <a class="dropdown-item" href="{% url 'course:coursepage' %}">
+                                        View Courses 
                                     </a>
-                                    <a class="dropdown-item" href="course-list-v2.html">
-                                        Courses List v2
+                                    <a class="dropdown-item" href="{% url 'course:enrolled' %}">
+                                        Enrolled Courses
                                     </a>
-                                    <a class="dropdown-item" href="course-list-v3.html">
-                                        Courses List v3
-                                    </a>
-                                    <a class="dropdown-item" href="course-list-v4.html">
-                                        Courses List v4
-                                    </a>
-                                    <a class="dropdown-item" href="course-list-v5.html">
-                                        Courses List v5
-                                    </a>
-                                    <a class="dropdown-item mb-5" href="course-list-v6.html">
-                                        Courses List v6
-                                    </a>
+
                                 </div>
-                                <div class="col-md-4">
-                                    <!-- Heading -->
-                                    <h5 class="dropdown-header">
-                                        Courses Single
-                                    </h5>
 
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="course-single-v1.html">
-                                        Courses Single v1
-                                    </a>
-                                    <a class="dropdown-item" href="course-single-v2.html">
-                                        Courses Single v2
-                                    </a>
-                                    <a class="dropdown-item" href="course-single-v3.html">
-                                        Courses Single v3
-                                    </a>
-                                    <a class="dropdown-item" href="course-single-v4.html">
-                                        Courses Single v4
-                                    </a>
-                                    <a class="dropdown-item mb-5" href="course-single-v5.html">
-                                        Courses Single v5
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <!-- Heading -->
-                                    <h5 class="dropdown-header">
-                                        Lesson Single
-                                    </h5>
-
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="lesson-single-v1.html">
-                                        Lesson Single v1
-                                    </a>
-                                    <a class="dropdown-item mb-5" href="lesson-single-v2.html">
-                                        Lesson Single v2
-                                    </a>
-
-                                    <!-- Heading -->
-                                    <h5 class="dropdown-header">
-                                        Instructors
-                                    </h5>
-
-                                    <!-- List -->
-                                    <a class="dropdown-item" href="instructors-list-v1.html">
-                                        Instructors List v1
-                                    </a>
-                                    <a class="dropdown-item" href="instructors-list-v2.html">
-                                        Instructors List v2
-                                    </a>
-                                    <a class="dropdown-item mb-5 mb-lg-0" href="instructors-single.html">
-                                        Instructors Single
-                                    </a>
-                                </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+
+
+                        <!-- / .row -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarCourses" data-bs-toggle="dropdown" href="{% url 'course:coursepage' %}" aria-haspopup="true" aria-expanded="false">
+                            instructors
+                        </a>
+
+                        <!-- / .row -->
                     </li>
 
                     <li class="nav-item dropdown">
@@ -1001,29 +831,13 @@
                             <div class="row gx-0">
                                 <div class="col-6">
                                     <div class="row gx-0">
-                                        <div class="col-12 col-lg-6">
-                                            <!-- List -->
-                                            <a class="dropdown-item" href="event-list.html">
-                                                Event List
-                                            </a>
-                                            <a class="dropdown-item" href="event-single.html">
-                                                Event Single
-                                            </a>
-                                            <a class="dropdown-item" href="gallery.html">
-                                                Gallery
-                                            </a>
-                                            <a class="dropdown-item mb-5 mb-lg-0" href="pricing.html">
-                                                Pricing
-                                            </a>
-                                        </div>
+
                                         <div class="col-12 col-lg-6">
                                             <!-- List -->
                                             <a class="dropdown-item" href="about-v1.html">
-                                                About v1
+                                                About Us
                                             </a>
-                                            <a class="dropdown-item" href="about-v2.html">
-                                                About v2
-                                            </a>
+
                                             <a class="dropdown-item" href="contact-us.html">
                                                 Contact us
                                             </a>
@@ -1040,10 +854,10 @@
                                             <a class="dropdown-item" href="faq.html">
                                                 FAQ
                                             </a>
-                                            <a class="dropdown-item" href="login.html">
+                                            <a class="dropdown-item" href="{% url 'login'%}">
                                                 Login
                                             </a>
-                                            <a class="dropdown-item" href="register.html">
+                                            <a class="dropdown-item" href="{% url 'user_mgmt:signup'%}">
                                                 Register
                                             </a>
                                             <a class="dropdown-item mb-5 mb-lg-0" href="become-instructor.html">
@@ -1051,59 +865,15 @@
                                             </a>
                                         </div>
 
-                                        <div class="col-12 col-lg-6">
-                                            <!-- List -->
-                                            <a class="dropdown-item" href="coming-soon.html">
-                                                Coming Soon
-                                            </a>
-                                            <a class="dropdown-item mb-5 mb-lg-0" href="404.html">
-                                                404
-                                            </a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- / .row -->
+                        </div>
+                        <!-- / .row -->
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarBlog" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                            Blog
-                        </a>
-                        <ul class="dropdown-menu border-xl shadow-none" aria-labelledby="navbarBlog">
-                            <li class="dropdown-item dropright">
-                                <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                                    Blog Grid
-                                </a>
-                                <div class="dropdown-menu border-xl shadow-none">
-                                    <a class="dropdown-item" href="blog-grid-v1.html">
-                                        Grid v1
-                                    </a>
-                                    <a class="dropdown-item" href="blog-grid-v2.html">
-                                        Grid v2
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="dropdown-item dropright">
-                                <a class="dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                                    Blog List
-                                </a>
-                                <div class="dropdown-menu border-xl shadow-none">
-                                    <a class="dropdown-item" href="blog-list-v1.html">
-                                        List v1
-                                    </a>
-                                    <a class="dropdown-item" href="blog-list-v2.html">
-                                        List v2
-                                    </a>
-                                </div>
-                            </li>
-                            <li class="dropdown-item">
-                                <a class="dropdown-link" href="blog-single.html">
-                                    Blog Single
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarShop" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
@@ -1138,89 +908,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
-                            Documentation
-                        </a>
-                        <div class="dropdown-menu border-xl shadow-none dropdown-menu-md" aria-labelledby="navbarDocumentation">
-                            <div class="list-group list-group-flush">
-                                <a class="list-group-item" href="docs/index.html">
 
-                                    <!-- Icon -->
-                                    <div class="display-4 text-primary">
-                                        <i class="fas fa-clipboard"></i>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="ms-4">
-
-                                        <!-- Heading -->
-                                        <h5 class="text-primary mb-n1">
-                                            Documentation
-                                        </h5>
-
-                                        <!-- Text -->
-                                        <p class="font-size-sm text-gray-700 mb-0">
-                                            Customizing and building
-                                        </p>
-
-                                    </div>
-
-                                </a>
-                                <a class="list-group-item" href="docs/alerts.html">
-
-                                    <!-- Icon -->
-                                    <div class="display-4 text-primary">
-                                        <i class="fas fa-th-large"></i>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="ms-4">
-
-                                        <!-- Heading -->
-                                        <h5 class="text-primary mb-n1">
-                                            Components
-                                        </h5>
-
-                                        <!-- Text -->
-                                        <p class="font-size-sm text-gray-700 mb-0">
-                                            Full list of components
-                                        </p>
-
-                                    </div>
-
-                                </a>
-                                <a class="list-group-item" href="docs/changelog.html">
-
-                                    <!-- Icon -->
-                                    <div class="display-4 text-primary">
-                                        <i class="fas fa-file-alt"></i>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="ms-4">
-
-                                        <!-- Heading -->
-                                        <h5 class="text-primary mb-n1">
-                                            Changelog
-                                        </h5>
-
-                                        <!-- Text -->
-                                        <p class="font-size-sm text-gray-700 mb-0">
-                                            Keep track of changes
-                                        </p>
-
-                                    </div>
-
-                                    <!-- Badge -->
-                                    <span class="badge badge-pill badge-primary-soft ms-auto">
-                                        1.0
-                                    </span>
-
-                                </a>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
 
@@ -1290,7 +978,8 @@
             </ul>
 
             <!-- Toggler -->
-            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <!-- Icon -->
                 <svg width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
                     <rect width="25" height="1" fill="currentColor"/>
@@ -1301,7 +990,6 @@
             </button>
         </div>
     </header>
-
 
     <!-- INSTRUCTORS SINGLE
     ================================================== -->
@@ -1335,7 +1023,7 @@
 
                     <div class="border rounded-circle d-inline-block mb-4 mb-md-0 mx-lg-4 order-0">
                         <div class="p-4">
-                            <img src="assets/img/avatars/avatar-6.jpg" alt="..." class="rounded-circle img-fluid" width="170" height="170">
+                            <img src="{% static 'assets/img/avatars/avatar-6.jpg'%}" alt="..." class="rounded-circle img-fluid" width="170" height="170">
                         </div>
                     </div>
 
@@ -1463,8 +1151,10 @@
 
                     <h3 class="">Bio</h3>
                     <p class="mb-6 line-height-md">Do you want to become a UI/UX designer but you don't know where to start? This course will allow you to develop your user interface design skills and you can add UI designer to your CV and start getting clients for your skills.</p>
-                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
-                    <p class="collapse mb-6 line-height-md" id="readcollapseExample">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente  I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs ea proident.</p>
+                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from
+                        entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
+                    <p class="collapse mb-6 line-height-md" id="readcollapseExample">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente I will help you learn and master Figma app comprehensively
+                        from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs ea proident.</p>
                     <a class="text-teal read-more h6 d-inline-block" data-bs-toggle="collapse" href="#readcollapseExample" role="button" aria-expanded="false" aria-controls="readcollapseExample">
                         <span class="d-inline-flex align-items-center more">
                             Read More
@@ -1498,7 +1188,7 @@
                                 <!-- Image -->
                                 <div class="card-zoom position-relative">
                                     <a href="course-single-v2.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                                        <img class="rounded shadow-light-lg" src="assets/img/products/product-15.jpg" alt="...">
+                                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-15.jpg'%}" alt="...">
                                     </a>
 
                                     <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -1513,7 +1203,9 @@
 
                                     <!-- Heading -->
                                     <div class="position-relative">
-                                        <a href="course-single-v2.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h5></a>
+                                        <a href="course-single-v2.html" class="d-block stretched-link">
+                                            <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Fashion Photography From Professional</h5>
+                                        </a>
 
                                         <div class="row mx-n2 align-items-end">
                                             <div class="col px-2">
@@ -1549,7 +1241,7 @@
                                 <!-- Image -->
                                 <div class="card-zoom position-relative">
                                     <a href="course-single-v2.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                                        <img class="rounded shadow-light-lg" src="assets/img/products/product-14.jpg" alt="...">
+                                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-14.jpg'%}" alt="...">
                                     </a>
 
                                     <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -1564,7 +1256,9 @@
 
                                     <!-- Heading -->
                                     <div class="position-relative">
-                                        <a href="course-single-v2.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5></a>
+                                        <a href="course-single-v2.html" class="d-block stretched-link">
+                                            <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5>
+                                        </a>
 
                                         <div class="row mx-n2 align-items-end">
                                             <div class="col px-2">
@@ -1600,7 +1294,7 @@
                                 <!-- Image -->
                                 <div class="card-zoom position-relative">
                                     <a href="course-single-v2.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                                        <img class="rounded shadow-light-lg" src="assets/img/products/product-16.jpg" alt="...">
+                                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-16.jpg'%}" alt="...">
                                     </a>
 
                                     <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -1615,7 +1309,9 @@
 
                                     <!-- Heading -->
                                     <div class="position-relative">
-                                        <a href="course-single-v2.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5></a>
+                                        <a href="course-single-v2.html" class="d-block stretched-link">
+                                            <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5>
+                                        </a>
 
                                         <div class="row mx-n2 align-items-end">
                                             <div class="col px-2">
@@ -1651,7 +1347,7 @@
                                 <!-- Image -->
                                 <div class="card-zoom position-relative">
                                     <a href="course-single-v2.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                                        <img class="rounded shadow-light-lg" src="assets/img/products/product-12.jpg" alt="...">
+                                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-12.jpg'%}" alt="...">
                                     </a>
 
                                     <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -1666,7 +1362,9 @@
 
                                     <!-- Heading -->
                                     <div class="position-relative">
-                                        <a href="course-single-v2.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5></a>
+                                        <a href="course-single-v2.html" class="d-block stretched-link">
+                                            <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5>
+                                        </a>
 
                                         <div class="row mx-n2 align-items-end">
                                             <div class="col px-2">
@@ -1702,7 +1400,7 @@
                                 <!-- Image -->
                                 <div class="card-zoom position-relative">
                                     <a href="course-single-v2.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                                        <img class="rounded shadow-light-lg" src="assets/img/products/product-13.jpg" alt="...">
+                                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-13.jpg'%}" alt="...">
                                     </a>
 
                                     <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -1717,7 +1415,9 @@
 
                                     <!-- Heading -->
                                     <div class="position-relative">
-                                        <a href="course-single-v2.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5></a>
+                                        <a href="course-single-v2.html" class="d-block stretched-link">
+                                            <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Learn Ethical Hacking From Scratch</h5>
+                                        </a>
 
                                         <div class="row mx-n2 align-items-end">
                                             <div class="col px-2">
@@ -1753,7 +1453,7 @@
                                 <!-- Image -->
                                 <div class="card-zoom position-relative">
                                     <a href="course-single-v2.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                                        <img class="rounded shadow-light-lg" src="assets/img/products/product-11.jpg" alt="...">
+                                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-11.jpg'%}" alt="...">
                                     </a>
 
                                     <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -1768,7 +1468,9 @@
 
                                     <!-- Heading -->
                                     <div class="position-relative">
-                                        <a href="course-single-v2.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5></a>
+                                        <a href="course-single-v2.html" class="d-block stretched-link">
+                                            <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">The Complete JavaScript Course 2020: Real Projects!</h5>
+                                        </a>
 
                                         <div class="row mx-n2 align-items-end">
                                             <div class="col px-2">
@@ -1804,7 +1506,7 @@
                                 <!-- Image -->
                                 <div class="card-zoom position-relative">
                                     <a href="course-single-v2.html" class="card-img sk-thumbnail img-ratio-3 d-block">
-                                        <img class="rounded shadow-light-lg" src="assets/img/products/product-10.jpg" alt="...">
+                                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-10.jpg'%}" alt="...">
                                     </a>
 
                                     <span class="sk-fade-right badge-float bottom-0 right-0 mb-2 me-2">
@@ -1819,7 +1521,9 @@
 
                                     <!-- Heading -->
                                     <div class="position-relative">
-                                        <a href="course-single-v2.html" class="d-block stretched-link"><h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5></a>
+                                        <a href="course-single-v2.html" class="d-block stretched-link">
+                                            <h5 class="line-clamp-2 h-md-48 h-lg-58 me-md-8 me-lg-10 me-xl-4 mb-2">Productivity and Time Management for workplace</h5>
+                                        </a>
 
                                         <div class="row mx-n2 align-items-end">
                                             <div class="col px-2">
@@ -1863,7 +1567,7 @@
                 <div class="col-12 col-md-4 col-lg-4">
 
                     <!-- Brand -->
-                    <img src="assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-4 h-60p">
+                    <img src="{% static 'assets/img/brand.svg'%}" alt="..." class="footer-brand img-fluid mb-4 h-60p">
 
                     <!-- Text -->
                     <p class="text-gray-800 mb-4 font-size-sm-alone">
@@ -2173,7 +1877,7 @@
                         <div class="ms-xl-auto d-flex flex-column flex-md-row align-items-stretch align-items-md-center justify-content-center">
                             <ul class="navbar-nav flex-row flex-wrap font-size-sm-alone mb-3 mb-md-0 mx-n4 me-md-5 justify-content-center justify-content-lg-start order-1 order-md-0">
                                 <li class="nav-item py-2 py-md-0 px-0 border-top-0">
-                                    <a href="index.html" class="nav-link px-4 fw-normal text-gray-800">Home</a>
+                                    <a href="{% url 'homepage' %}" class="nav-link px-4 fw-normal text-gray-800">Home</a>
                                 </li>
                                 <li class="nav-item py-2 py-md-0 px-0 border-top-0">
                                     <a href="terms-of-service.html" class="nav-link px-4 fw-normal text-gray-800">Site Map</a>
@@ -2197,42 +1901,45 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- / .row -->
-        </div> <!-- / .container -->
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
     </footer>
 
 
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="assets/libs/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/libs/quill/dist/quill.min.js"></script>
-    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js'%}"></script>
+    <script src="{% static 'assets/libs/aos/dist/aos.js'%}"></script>
+    <script src="{% static 'assets/libs/choices.js/public/assets/scripts/choices.min.js'%}"></script>
+    <script src="{% static 'assets/libs/countup.js/dist/countUp.min.js'%}"></script>
+    <script src="{% static 'assets/libs/dropzone/dist/min/dropzone.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity/dist/flickity.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity-fade/flickity-fade.js'%}"></script>
+    <script src="{% static 'assets/libs/highlightjs/highlight.pack.min.js'%}"></script>
+    <script src="{% static 'assets/libs/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/isotope-layout/dist/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-video.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-element.min.js'%}"></script>
+    <script src="{% static 'assets/libs/parallax-js/dist/parallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/quill/dist/quill.min.js'%}"></script>
+    <script src="{% static 'assets/libs/smooth-scroll/dist/smooth-scroll.min.js'%}"></script>
+    <script src="{% static 'assets/libs/typed.js'%}/lib/typed.min.js'%}"></script>
 
     <!-- Map -->
     <script src='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="{% static 'assets/js/theme.min.js'%}"></script>
 
 
 </body>
 
 <!-- Mirrored from transvelo.github.io/skola-html/5.1/instructors-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jan 2022 12:13:11 GMT -->
+
 </html>

@@ -1,121 +1,124 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="{% static 'assets/img/brand.svg'%}">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;family=Lora:wght@400;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet">
 
     <!-- Libs CSS -->
-    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.css">
-    <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="assets/libs/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/aos/dist/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/choices.js/public/assets/styles/choices.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity-fade/flickity-fade.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/flickity/dist/flickity.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/highlightjs/styles/vs2015.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/jarallax/dist/jarallax.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/libs/quill/dist/quill.core.css'%}" />
 
     <!-- Map -->
     <link href='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/theme.min.css'%}">
 
-    <title>Skola</title>
+    <title>gyanguru</title>
 
 </head>
+
 <body class="bg-white">
 
     <!-- MODALS
     ================================================== -->
     <!-- Modal Sidebar account -->
     <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
 
-            <!-- Close -->
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <!-- Close -->
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
 
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+                        Schedule a demo with us
+                    </h2>
 
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                        We can help you solve company communication.
+                    </p>
 
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                    <!-- Form -->
+                    <form>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- First name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
+                                <!-- First name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                                    <label for="registrationFirstNameModal">First name</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Last name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
+                                <!-- Last name -->
+                                <div class="form-label-group">
+                                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                                    <label for="registrationLastNameModal">Last name</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
 
-                  <!-- Email -->
-                  <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
+                                <!-- Email -->
+                                <div class="form-label-group">
+                                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                                    <label for="registrationEmailModal">Email</label>
+                                </div>
 
-                </div>
-                <div class="col-12 col-md-6">
+                            </div>
+                            <div class="col-12 col-md-6">
 
-                  <!-- Password -->
-                  <div class="form-label-group">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
+                                <!-- Password -->
+                                <div class="form-label-group">
+                                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                                    <label for="registrationPasswordModal">Password</label>
+                                </div>
 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
 
-                  <!-- Submit -->
-                  <button class="btn btn-block btn-primary mt-3 lift">
+                                <!-- Submit -->
+                                <button class="btn btn-block btn-primary mt-3 lift">
                     Request a demo
                   </button>
 
-                </div>
-              </div>
-            </form>
+                            </div>
+                        </div>
+                    </form>
 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="modal modal-sidebar left fade-left fade" id="accountModal">
@@ -124,7 +127,7 @@
                 <!-- Signin -->
                 <div class="collapse show" id="collapseSignin" data-bs-parent="#accountModal">
                     <div class="modal-header">
-                        <h5 class="modal-title">Log In to Your Skola Account!</h5>
+                        <h5 class="modal-title">Log In to Your gyanguru Account!</h5>
                         <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
                             <!-- Icon -->
                             <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -383,12 +386,12 @@
 
     <!-- NAVBAR
     ================================================== -->
-    <header class="bg-white border-bottom py-3 header-fixed" >
+    <header class="bg-white border-bottom py-3 header-fixed">
         <div class="px-5 px-lg-8 w-100">
             <div class="d-md-flex align-items-center">
                 <!-- Brand -->
-                <a class="navbar-brand mb-2 mb-md-0" href="index.html">
-                    <img src="assets/img/brand.svg" class="navbar-brand-img" alt="...">
+                <a class="navbar-brand mb-2 mb-md-0" href="{% url 'homepage' %}">
+                    <img src="{% static 'assets/img/brand.svg'%}" class="navbar-brand-img" alt="...">
                 </a>
 
                 <!-- Lesson Title -->
@@ -397,7 +400,7 @@
                 </div>
 
                 <!-- Back to Course -->
-                <a href="course-single-v1.html" class="btn btn-sm btn-primary ms-md-6 px-6 mb-3 mb-md-0 flex-shrink-0">Back to Course</a>
+                <a href="{% url 'course:enrolled' %}" class="btn btn-sm btn-primary ms-md-6 px-6 mb-3 mb-md-0 flex-shrink-0">Back to Course</a>
             </div>
         </div>
     </header>
@@ -1199,14 +1202,16 @@
                             </svg>
 
                         </div>
-                        <img class="rounded shadow-light-lg" src="assets/img/products/product-2.jpg" alt="...">
+                        <img class="rounded shadow-light-lg" src="{% static 'assets/img/products/product-2.jpg'%}" alt="...">
                     </a>
 
                     <h3 class="">Course Description</h3>
 
                     <p class="mb-6 line-height-md">Do you want to become a UI/UX designer but you don't know where to start? This course will allow you to develop your user interface design skills and you can add UI designer to your CV and start getting clients for your skills.</p>
-                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
-                    <p class="collapse mb-6 line-height-md" id="readcollapseExample">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente  I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs ea proident.</p>
+                    <p class="mb-6 line-height-md">Hi everyone. I'm Arash and I'm a UI/UX designer. In this course, I will help you learn and master Figma app comprehensively from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from
+                        entrepreneurs and start-ups to Apple, Airbnb, Facebook, etc.</p>
+                    <p class="collapse mb-6 line-height-md" id="readcollapseExample">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente I will help you learn and master Figma app comprehensively
+                        from scratch. Figma is an innovative and brilliant tool for User Interface design. It's used by everyone from entrepreneurs ea proident.</p>
                     <a class="text-teal read-more h6 d-inline-block mb-8" data-bs-toggle="collapse" href="#readcollapseExample" role="button" aria-expanded="false" aria-controls="readcollapseExample">
                         <span class="d-inline-flex align-items-center more">
                             Read More
@@ -1237,7 +1242,7 @@
                     <ul class="list-unstyled pt-2">
                         <li class="media d-flex">
                             <div class="avatar avatar-xxl me-3 me-md-6 flex-shrink-0">
-                                <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-1.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                             <div class="media-body flex-grow-1">
                                 <div class="d-md-flex align-items-center mb-5">
@@ -1249,12 +1254,13 @@
                                         <div class="rating" style="width:100%;"></div>
                                     </div>
                                 </div>
-                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24 frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
+                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24
+                                    frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
                             </div>
                         </li>
                         <li class="media d-flex">
                             <div class="avatar avatar-xxl me-3 me-md-6 flex-shrink-0">
-                                <img src="assets/img/avatars/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                                <img src="{% static 'assets/img/avatars/avatar-2.jpg'%}" alt="..." class="avatar-img rounded-circle">
                             </div>
                             <div class="media-body flex-grow-1">
                                 <div class="d-md-flex align-items-center mb-5">
@@ -1266,7 +1272,8 @@
                                         <div class="rating" style="width:100%;"></div>
                                     </div>
                                 </div>
-                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24 frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
+                                <p class="mb-6 line-height-md">This course was well organized and covered a lot more details than any other Figma courses. I really enjoy it. One suggestion is that it can be much better if we could complete the prototype together. Since we created 24
+                                    frames, I really want to test it on Figma mirror to see all the connections. Could you please let me take a look at the complete prototype?</p>
                             </div>
                         </li>
                     </ul>
@@ -1278,31 +1285,31 @@
                             <div class="clearfix">
                                 <fieldset class="slect-rating mb-3">
                                     <input type="radio" id="star5" name="rating" value="5" />
-                                    <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                    <label class="full" for="star5" title="Awesome - 5 stars"></label>
 
                                     <input type="radio" id="star4half" name="rating" value="4 and a half" />
                                     <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
 
                                     <input type="radio" id="star4" name="rating" value="4" />
-                                    <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                    <label class="full" for="star4" title="Pretty good - 4 stars"></label>
 
                                     <input type="radio" id="star3half" name="rating" value="3 and a half" />
                                     <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
 
                                     <input type="radio" id="star3" name="rating" value="3" />
-                                    <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                    <label class="full" for="star3" title="Meh - 3 stars"></label>
 
                                     <input type="radio" id="star2half" name="rating" value="2 and a half" />
                                     <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
 
                                     <input type="radio" id="star2" name="rating" value="2" />
-                                    <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
 
                                     <input type="radio" id="star1half" name="rating" value="1 and a half" />
                                     <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
 
                                     <input type="radio" id="star1" name="rating" value="1" />
-                                    <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                    <label class="full" for="star1" title="Sucks big time - 1 star"></label>
 
                                     <input type="radio" id="starhalf" name="rating" value="half" />
                                     <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
@@ -1330,31 +1337,31 @@
     <!-- JAVASCRIPT
     ================================================== -->
     <!-- Libs JS -->
-    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
-    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="assets/libs/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/libs/quill/dist/quill.min.js"></script>
-    <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="assets/libs/typed.js/lib/typed.min.js"></script>
+    <script src="{% static 'assets/libs/jquery/dist/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js'%}"></script>
+    <script src="{% static 'assets/libs/aos/dist/aos.js'%}"></script>
+    <script src="{% static 'assets/libs/choices.js/public/assets/scripts/choices.min.js'%}"></script>
+    <script src="{% static 'assets/libs/countup.js/dist/countUp.min.js'%}"></script>
+    <script src="{% static 'assets/libs/dropzone/dist/min/dropzone.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity/dist/flickity.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/flickity-fade/flickity-fade.js'%}"></script>
+    <script src="{% static 'assets/libs/highlightjs/highlight.pack.min.js'%}"></script>
+    <script src="{% static 'assets/libs/imagesloaded/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/isotope-layout/dist/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-video.min.js'%}"></script>
+    <script src="{% static 'assets/libs/jarallax/dist/jarallax-element.min.js'%}"></script>
+    <script src="{% static 'assets/libs/parallax-js/dist/parallax.min.js'%}"></script>
+    <script src="{% static 'assets/libs/quill/dist/quill.min.js'%}"></script>
+    <script src="{% static 'assets/libs/smooth-scroll/dist/smooth-scroll.min.js'%}"></script>
+    <script src="{% static 'assets/libs/typed.js'%}/lib/typed.min.js'%}"></script>
 
     <!-- Map -->
     <script src='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="{% static 'assets/js/theme.min.js'%}"></script>
 
 
 </body>

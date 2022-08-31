@@ -12,3 +12,7 @@ class OrderCompleteView(TemplateView):
     template_name = "main_pages/shop-order-completed.html"
 class EnrolledCourseView(TemplateView):
     template_name = "main_pages/enrolled-courses.html"
+class LessonView(TemplateView):
+    template_name = "main_pages/lesson-single-v1.html"
+class InstructorSingleView(TemplateView):
+    template_name = "main_pages/instructors-single.html"
