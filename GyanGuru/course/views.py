@@ -28,7 +28,7 @@ def ADD(request):
         email = request.POST.get('email')
         password = request.POST.get('password')
         
-
+        print(name, email, password)
         emp = Students(
             name= name,
             email= email,
@@ -37,5 +37,11 @@ def ADD(request):
         )
         emp.save()
         return redirect('login')
-     return render(request, 'index.html') 
+     elif request.method == 'GET':
+        name = request.POST.get('username')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+        
+        print(name, email, password)
+     return render(request, 'main_pages/index.html') 
 

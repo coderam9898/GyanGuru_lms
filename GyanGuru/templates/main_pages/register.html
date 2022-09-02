@@ -203,14 +203,15 @@
 
                     <div class="modal-body">
                         <!-- Form Signup -->
-                        <form class="mb-5">
+                        <form class="mb-5" methon="POST" action="{% url 'course:add'%}">
+                            {% csrf_token %}
 
                             <!-- Username -->
                             <div class="form-group mb-5">
                                 <label for="modalSignupUsername">
                                     Username
                                 </label>
-                                <input type="text" class="form-control" id="modalSignupUsername" placeholder="John">
+                                <input type="text" name="username" class="form-control" id="modalSignupUsername" placeholder="John">
                             </div>
 
                             <!-- Email -->
@@ -218,7 +219,7 @@
                                 <label for="modalSignupEmail">
                                     Username or Email
                                 </label>
-                                <input type="email" class="form-control" id="modalSignupEmail" placeholder="johndoe@creativelayers.com">
+                                <input type="email" name="email" class="form-control" id="modalSignupEmail" placeholder="johndoe@creativelayers.com">
                             </div>
 
                             <!-- Password -->
@@ -226,7 +227,7 @@
                                 <label for="modalSignupPassword">
                                     Password
                                 </label>
-                                <input type="password" class="form-control" id="modalSignupPassword" placeholder="**********">
+                                <input type="password" name="password" class="form-control" id="modalSignupPassword" placeholder="**********">
                             </div>
 
                             <!-- Submit -->
